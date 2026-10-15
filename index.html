@@ -1,32 +1,17 @@
-[01:10, 15/10/2026] Lf: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hélio Garcia | Assessoria Acadêmica para Concursos & Graduação Rápida MEC</title>
 
-    <!-- SEO Meta Tags Aperfeiçoadas -->
-    <meta name="description" content="Hélio Garcia Assessoria Acadêmica especializada em concursos públicos: acelere sua faculdade para edital, regularização de diploma e-MEC, graduação rápida para prova de títulos, diário oficial e validação para posse em cargo público.">
-    <meta name="keywords" content="assessoria acadêmica para concursos, diploma reconhecido pelo mec, como validar diploma para posse, regularização de diploma para concurso, diploma superior para concurso público,…
-[01:16, 15/10/2026] Lf: <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hélio Garcia | Assessoria Acadêmica para Concursos & Graduação Rápida MEC</title>
-
-    <!-- SEO Meta Tags Aperfeiçoadas -->
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Hélio Garcia Assessoria Acadêmica especializada em concursos públicos: acelere sua faculdade para edital, regularização de diploma e-MEC, graduação rápida para prova de títulos, diário oficial e validação para posse em cargo público.">
     <meta name="keywords" content="assessoria acadêmica para concursos, diploma reconhecido pelo mec, como validar diploma para posse, regularização de diploma para concurso, diploma superior para concurso público, acelerar faculdade para edital, graduação rápida para prova de títulos, tecnólogo reconhecido pelo mec rápido, validar faculdade para conselho de classe, como assumir cargo público sem diploma, emissão de diploma com diário oficial, legalização de diploma e-mec, assessoria para homologação de diploma, como apresentar títulos em concurso, faculdade expressa para posse, comprovar nível superior com urgência, regularizar faculdade para o cebraspe, emissão de histórico e diploma válido, consultoria educacional para editais, faculdade rápida reconhecida pelo mec, consultoria helio garcia educacional">
     <meta name="robots" content="index, follow">
     
-    <!-- Tag Canônica com Domínio Personalizado -->
     <link rel="canonical" href="https://assessoriahelioeducacional.com.br/">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
-
-    <!-- Fontes Google -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
 
     <style>
@@ -41,6 +26,7 @@
             --text-light: #f0fdf4;
             --text-muted: #a7f3d0;
             --whatsapp-green: #25d366;
+            --cyan-accent: #38bdf8;
         }
 
         * {
@@ -161,31 +147,6 @@
             background-color: #22c55e;
         }
 
-        .btn-wsp-card {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 18px;
-            padding: 12px 20px;
-            background-color: var(--whatsapp-green);
-            color: #000;
-            font-weight: 700;
-            font-size: 0.88rem;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: all 0.3s;
-            cursor: pointer;
-            border: none;
-            width: 100%;
-        }
-
-        .btn-wsp-card:hover {
-            background-color: #22c55e;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-        }
-
         .vsl-container {
             position: relative;
             width: 100%;
@@ -208,26 +169,30 @@
             border: 0;
         }
 
-        /* Barra de Filtros */
+        /* Secção dos Editais e Filtros */
+        .section-editais {
+            padding: 70px 6% 100px;
+            border-top: 1px solid var(--card-border);
+        }
+
         .filtros-container {
             display: flex;
             justify-content: center;
-            gap: 12px;
-            margin: 30px auto 50px;
+            gap: 14px;
+            margin-bottom: 45px;
             flex-wrap: wrap;
-            max-width: 900px;
         }
 
         .btn-filtro {
-            background: #062317;
-            color: #38bdf8;
-            border: 1px solid #0d422d;
+            background-color: var(--card-bg);
+            color: var(--cyan-accent);
+            border: 1px solid var(--card-border);
             padding: 10px 24px;
             border-radius: 30px;
-            font-weight: 700;
             font-size: 0.95rem;
+            font-weight: 700;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.25s ease;
             outline: none;
         }
 
@@ -237,59 +202,15 @@
         }
 
         .btn-filtro.active {
-            background: #eab308;
+            background-color: #eab308;
             color: #000000;
             border-color: #eab308;
-            box-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
-        }
-
-        /* Seção e Grelha de Editais */
-        .section-editais {
-            padding: 60px 6% 100px;
-            border-top: 1px solid var(--card-border);
-        }
-
-        .section-header {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-
-        .section-header h2 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 2.2rem;
-            color: #ffffff;
-            margin-bottom: 12px;
-        }
-
-        .section-header h2 span {
-            color: var(--accent-yellow);
-        }
-
-        .section-header p {
-            color: var(--text-muted);
-            font-size: 1.05rem;
-        }
-
-        .category-block {
-            margin-bottom: 60px;
-        }
-
-        .category-title {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.6rem;
-            color: var(--accent-yellow-light);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 24px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--card-border);
+            box-shadow: 0 0 15px rgba(234, 179, 8, 0.35);
         }
 
         .grid-editais {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 24px;
         }
 
@@ -297,74 +218,69 @@
             background-color: var(--card-bg);
             border: 1px solid var(--card-border);
             border-radius: 16px;
-            padding: 24px;
+            padding: 26px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
         }
 
         .card-edital:hover {
-            transform: translateY(-5px);
+            transform: translateY(-4px);
             border-color: var(--primary-green);
-            box-shadow: 0 10px 25px rgba(5, 150, 105, 0.2);
+            box-shadow: 0 10px 24px rgba(5, 150, 105, 0.2);
         }
 
         .card-tag {
             align-self: flex-start;
-            font-size: 0.78rem;
+            font-size: 0.8rem;
             font-weight: 700;
-            padding: 5px 12px;
+            padding: 4px 12px;
             border-radius: 20px;
             margin-bottom: 14px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* Variações visuais das tags */
-        .tag-abertas {
-            background: rgba(37, 211, 102, 0.15);
-            color: #4ade80;
-            border: 1px solid rgba(74, 222, 128, 0.4);
-        }
-
-        .tag-autorizados {
-            background: rgba(245, 158, 11, 0.15);
             color: var(--accent-yellow);
-            border: 1px solid rgba(245, 158, 11, 0.4);
-        }
-
-        .tag-previstos {
-            background: rgba(56, 189, 248, 0.15);
-            color: #38bdf8;
-            border: 1px solid rgba(56, 189, 248, 0.4);
+            background: rgba(245, 158, 11, 0.12);
+            border: 1px solid rgba(245, 158, 11, 0.3);
         }
 
         .card-edital h3 {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.25rem;
-            color: #ffffff;
-            margin-bottom: 10px;
+            font-size: 1.3rem;
+            color: var(--cyan-accent);
+            margin-bottom: 12px;
             line-height: 1.3;
         }
 
-        .edital-info {
-            list-style: none;
-            margin: 12px 0 18px;
-            font-size: 0.9rem;
-            color: var(--text-muted);
+        .card-edital p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            opacity: 0.9;
+            margin-bottom: 22px;
+            line-height: 1.5;
         }
 
-        .edital-info li {
-            margin-bottom: 8px;
-            display: flex;
-            align-items: flex-start;
+        .btn-wsp-card {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             gap: 8px;
+            padding: 12px 20px;
+            background-color: var(--whatsapp-green);
+            color: #000;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            width: 100%;
         }
 
-        .edital-info strong {
-            color: #ffffff;
+        .btn-wsp-card:hover {
+            background-color: #22c55e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
         }
 
         footer {
@@ -405,14 +321,11 @@
             🎓 HÉLIO GARCIA <span>ASSESSORIA</span>
         </div>
         <nav>
-            <a href="#policial">Carreiras Policiais</a>
-            <a href="#tribunais">Tribunais</a>
-            <a href="#administrativo">Administrativo & CNU</a>
-            <a href="#fiscal">Fiscal & Controle</a>
+            <a href="#editais">Editais</a>
         </nav>
     </header>
 
-    <!-- Hero / Apresentação -->
+    <!-- Hero com VSL -->
     <section class="hero">
         <div class="hero-text">
             <h1>Garanta sua Posse nos Editais <span>2026/2027</span> com Graduação e Diploma Rápido</h1>
@@ -426,430 +339,211 @@
         </div>
     </section>
 
-    <!-- Secção de Editais com Filtros -->
-    <section class="section-editais">
-        <div class="section-header">
-            <h2>Grandes Editais Atualizados <span>2026 / 2027</span></h2>
-            <p>Selecione pelo estado do edital ou filtre pelas áreas de concurso abaixo:</p>
-        </div>
-
-        <!-- Barra dos 4 Botões de Filtro -->
+    <!-- Secção de Editais -->
+    <section class="section-editais" id="editais">
+        
+        <!-- Os 4 Botões de Filtro -->
         <div class="filtros-container">
-            <button class="btn-filtro active" data-filter="todos">Todos os Editais</button>
-            <button class="btn-filtro" data-filter="abertas">Inscrições Abertas</button>
-            <button class="btn-filtro" data-filter="autorizados">Autorizados</button>
-            <button class="btn-filtro" data-filter="previstos">Previstos</button>
+            <button type="button" class="btn-filtro active" data-filter="todos">Todos os Editais</button>
+            <button type="button" class="btn-filtro" data-filter="abertas">Inscrições Abertas</button>
+            <button type="button" class="btn-filtro" data-filter="autorizados">Autorizados</button>
+            <button type="button" class="btn-filtro" data-filter="previstos">Previstos</button>
         </div>
 
-        <!-- 1. CARREIRAS POLICIAIS (6 EDITAIS) -->
-        <div class="category-block" id="policial">
-            <h3 class="category-title">🛡️ Carreiras Policiais & Segurança Pública</h3>
-            <div class="grid-editais">
-                
-                <div class="card-edital" data-status="previstos">
-                    <div>
-                        <span class="card-tag tag-previstos">Previstos</span>
-                        <h3>Polícia Federal (PF)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Agente, Escrivão e Papiloscopista</li>
-                            <li><strong>Remuneração:</strong> R$ 13.900,00 a R$ 25.800,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior completo (Aceita Tecnólogo e-MEC)</li>
-                            <li><strong>Urgência:</strong> Diploma exigido rigorosamente na Posse</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20acelerar%20graduacao%20para%20Policia%20Federal" class="btn-wsp-card" target="_blank">Atendimento para PF 📲</a>
-                </div>
+        <div class="grid-editais">
 
-                <div class="card-edital" data-status="autorizados">
-                    <div>
-                        <span class="card-tag tag-autorizados">Autorizados</span>
-                        <h3>Polícia Rodoviária Federal (PRF)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Policial Rodoviário Federal</li>
-                            <li><strong>Remuneração:</strong> R$ 11.670,33 a R$ 18.500,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior em qualquer área</li>
-                            <li><strong>Urgência:</strong> Comprovação na matrícula do Curso de Formação</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20acelerar%20graduacao%20para%20PRF" class="btn-wsp-card" target="_blank">Atendimento para PRF 📲</a>
+            <!-- 6 EDITAIS: INSCRIÇÕES ABERTAS -->
+            <div class="card-edital" data-status="abertas">
+                <div>
+                    <span class="card-tag">Inscrições Abertas</span>
+                    <h3>Tribunais Regionais (TRT / TRE)</h3>
+                    <p>Assessoria completa para homologação de diploma e apresentação de títulos.</p>
                 </div>
-
-                <div class="card-edital" data-status="autorizados">
-                    <div>
-                        <span class="card-tag tag-autorizados">Autorizados</span>
-                        <h3>Polícia Civil do DF (PCDF)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Agente de Custódia, Perito e Papiloscopista</li>
-                            <li><strong>Remuneração:</strong> R$ 11.085,72 a R$ 21.449,24</li>
-                            <li><strong>Requisito:</strong> Graduação Superior com registro oficial</li>
-                            <li><strong>Urgência:</strong> Cebraspe exige histórico e diploma com diário oficial</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20validar%20diploma%20para%20PCDF" class="btn-wsp-card" target="_blank">Atendimento para PCDF 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="abertas">
-                    <div>
-                        <span class="card-tag tag-abertas">Inscrições Abertas</span>
-                        <h3>Polícia Civil do RJ (PC-RJ)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Perito Criminal e Legista</li>
-                            <li><strong>Remuneração:</strong> R$ 13.786,36 a R$ 26.981,77</li>
-                            <li><strong>Requisito:</strong> Nível Superior / Tecnólogo específico</li>
-                            <li><strong>Urgência:</strong> Validação de títulos e homologação rápida</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20assessoria%20para%20PC-RJ" class="btn-wsp-card" target="_blank">Atendimento para PC-RJ 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="abertas">
-                    <div>
-                        <span class="card-tag tag-abertas">Inscrições Abertas</span>
-                        <h3>Polícia Militar do DF (PMDF)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Soldado Combatente</li>
-                            <li><strong>Remuneração:</strong> R$ 5.336,96 a R$ 8.900,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior em qualquer área de formação</li>
-                            <li><strong>Urgência:</strong> Apresentação obrigatória no ato da posse</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20diploma%20para%20PMDF" class="btn-wsp-card" target="_blank">Atendimento para PMDF 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="previstos">
-                    <div>
-                        <span class="card-tag tag-previstos">Previstos</span>
-                        <h3>Polícia Penal (PE / PB / CE)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Policial Penal Estadual</li>
-                            <li><strong>Remuneração:</strong> R$ 5.100,00 a R$ 7.200,00</li>
-                            <li><strong>Requisito:</strong> Graduação Superior em qualquer área / Tecnólogo</li>
-                            <li><strong>Urgência:</strong> Entrega na convocação e investigação social</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20graduacao%20para%20Policia%20Penal" class="btn-wsp-card" target="_blank">Atendimento para Polícia Penal 📲</a>
-                </div>
-
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20Tribunais" class="btn-wsp-card" target="_blank">💬 Atendimento para Tribunais</a>
             </div>
-        </div>
 
-        <!-- 2. TRIBUNAIS & JUDICIÁRIO (6 EDITAIS) -->
-        <div class="category-block" id="tribunais">
-            <h3 class="category-title">⚖️ Tribunais & Poder Judiciário</h3>
-            <div class="grid-editais">
-                
-                <div class="card-edital" data-status="abertas">
-                    <div>
-                        <span class="card-tag tag-abertas">Inscrições Abertas</span>
-                        <h3>TRT Nacional (Tribunais do Trabalho)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Técnico e Analista Judiciário (TRTs Regionais)</li>
-                            <li><strong>Remuneração:</strong> R$ 8.529,65 a R$ 13.994,78</li>
-                            <li><strong>Requisito:</strong> Nível Superior OBRIGATÓRIO (Lei 14.456)</li>
-                            <li><strong>Urgência:</strong> Técnico exige diploma de graduação homologado e-MEC</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20diploma%20para%20TRT" class="btn-wsp-card" target="_blank">Atendimento para Tribunais 📲</a>
+            <div class="card-edital" data-status="abertas">
+                <div>
+                    <span class="card-tag">Inscrições Abertas</span>
+                    <h3>Concurso Nacional Unificado (CNU 2026/2027)</h3>
+                    <p>Regularização rápida de tecnólogo e graduação para vagas de nível superior em blocos federais.</p>
                 </div>
-
-                <div class="card-edital" data-status="autorizados">
-                    <div>
-                        <span class="card-tag tag-autorizados">Autorizados</span>
-                        <h3>Tribunais de Justiça (TJ-PR, TJ-SC, TJ-GO)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Analista Judiciário e Oficial de Justiça</li>
-                            <li><strong>Remuneração:</strong> R$ 7.800,00 a R$ 14.200,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior com registro em diário oficial</li>
-                            <li><strong>Urgência:</strong> Pontuação extra na Prova de Títulos para posse</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20diploma%20para%20TJ" class="btn-wsp-card" target="_blank">Atendimento para TJ 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="previstos">
-                    <div>
-                        <span class="card-tag tag-previstos">Previstos</span>
-                        <h3>TRF 1ª & 6ª Regiões</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Técnico Judiciário e Analista Federal</li>
-                            <li><strong>Remuneração:</strong> R$ 8.529,00 a R$ 14.852,00</li>
-                            <li><strong>Requisito:</strong> Diploma de Graduação / Tecnólogo válido pelo MEC</li>
-                            <li><strong>Urgência:</strong> Chamada ágil em lista de cadastro de reserva</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20diploma%20para%20TRF" class="btn-wsp-card" target="_blank">Atendimento para TRF 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="previstos">
-                    <div>
-                        <span class="card-tag tag-previstos">Previstos</span>
-                        <h3>Ministério Público da União (MPU)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Técnico e Analista do MPU</li>
-                            <li><strong>Remuneração:</strong> R$ 9.052,00 a R$ 15.200,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior completo reconhecido pelo MEC</li>
-                            <li><strong>Urgência:</strong> Nova legislação requer nível superior aos técnicos</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20diploma%20para%20o%20MPU" class="btn-wsp-card" target="_blank">Atendimento para MPU 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="autorizados">
-                    <div>
-                        <span class="card-tag tag-autorizados">Autorizados</span>
-                        <h3>Defensorias Públicas (DPDF / DPE-AM)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Analista de Apoio à Assistência Jurídica</li>
-                            <li><strong>Remuneração:</strong> R$ 7.200,00 a R$ 11.800,00</li>
-                            <li><strong>Requisito:</strong> Diploma de Ensino Superior reconhecido</li>
-                            <li><strong>Urgência:</strong> Habilitação documental e prova de títulos</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20diploma%20para%20Defensoria" class="btn-wsp-card" target="_blank">Atendimento para DPE 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="abertas">
-                    <div>
-                        <span class="card-tag tag-abertas">Inscrições Abertas</span>
-                        <h3>TSE Unificado & TREs Regionais</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Técnico Judiciário e Analista Eleitoral</li>
-                            <li><strong>Remuneração:</strong> R$ 8.529,65 a R$ 13.994,78</li>
-                            <li><strong>Requisito:</strong> Graduação Superior em qualquer área ou específica</li>
-                            <li><strong>Urgência:</strong> Convocação de empossados com verificação documental</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20diploma%20para%20TSE%20TRE" class="btn-wsp-card" target="_blank">Atendimento para Tribunais 📲</a>
-                </div>
-
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20o%20CNU" class="btn-wsp-card" target="_blank">💬 Atendimento para o CNU</a>
             </div>
-        </div>
 
-        <!-- 3. CARREIRAS ADMINISTRATIVAS & FEDERAIS (6 EDITAIS) -->
-        <div class="category-block" id="administrativo">
-            <h3 class="category-title">🏛️ Administrativo, Federais & CNU</h3>
-            <div class="grid-editais">
-                
-                <div class="card-edital" data-status="abertas">
-                    <div>
-                        <span class="card-tag tag-abertas">Inscrições Abertas</span>
-                        <h3>CNU Nacional Unificado</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Vários Ministérios e Autarquias Federais</li>
-                            <li><strong>Remuneração:</strong> R$ 6.800,00 a R$ 22.900,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior / Tecnólogos cadastrados no MEC</li>
-                            <li><strong>Urgência:</strong> Titulação obrigatória nos prazos federais</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20diploma%20urgente%20para%20CNU" class="btn-wsp-card" target="_blank">Atendimento para o CNU 📲</a>
+            <div class="card-edital" data-status="abertas">
+                <div>
+                    <span class="card-tag">Inscrições Abertas</span>
+                    <h3>Polícia Civil (PC-RJ / PC-SP)</h3>
+                    <p>Validação urgente de histórico e diploma reconhecido pelo MEC para a etapa documental e posse.</p>
                 </div>
-
-                <div class="card-edital" data-status="autorizados">
-                    <div>
-                        <span class="card-tag tag-autorizados">Autorizados</span>
-                        <h3>INSS (Previdência Social)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Técnico e Analista do Seguro Social</li>
-                            <li><strong>Remuneração:</strong> R$ 6.500,00 a R$ 10.200,00</li>
-                            <li><strong>Requisito:</strong> Transição para exigência de Nível Superior</li>
-                            <li><strong>Urgência:</strong> Apresentação obrigatória na chamada para posse</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20diploma%20para%20o%20INSS" class="btn-wsp-card" target="_blank">Atendimento para INSS 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="previstos">
-                    <div>
-                        <span class="card-tag tag-previstos">Previstos</span>
-                        <h3>Câmara dos Deputados</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Analista Legislativo</li>
-                            <li><strong>Remuneração:</strong> R$ 32.070,88</li>
-                            <li><strong>Requisito:</strong> Diploma de Nível Superior reconhecido pelo MEC</li>
-                            <li><strong>Urgência:</strong> Análise de regularidade com Diário Oficial</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20assessoria%20para%20Camara%20dos%20Deputados" class="btn-wsp-card" target="_blank">Atendimento para Câmara 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="autorizados">
-                    <div>
-                        <span class="card-tag tag-autorizados">Autorizados</span>
-                        <h3>PRF Administrativo</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Agente Administrativo da PRF</li>
-                            <li><strong>Remuneração:</strong> R$ 5.173,28 a R$ 6.800,00</li>
-                            <li><strong>Requisito:</strong> Nível Médio/Superior com pontuação em prova de títulos</li>
-                            <li><strong>Urgência:</strong> Vantagem na classificação final de graduados</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20acelerar%20titulos%20para%20PRF%20Adm" class="btn-wsp-card" target="_blank">Atendimento para PRF Adm 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="abertas">
-                    <div>
-                        <span class="card-tag tag-abertas">Inscrições Abertas</span>
-                        <h3>Correios (Área Corporativa)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Analista de Correios (Especialidades)</li>
-                            <li><strong>Remuneração:</strong> R$ 6.800,00 a R$ 9.500,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior / Graduação reconhecida</li>
-                            <li><strong>Urgência:</strong> Convocação para integração de quadros</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20diploma%20para%20os%20Correios" class="btn-wsp-card" target="_blank">Atendimento para Correios 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="previstos">
-                    <div>
-                        <span class="card-tag tag-previstos">Previstos</span>
-                        <h3>IBGE Efetivo (Carreira Permanente)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Tecnologista e Analista de Planejamento</li>
-                            <li><strong>Remuneração:</strong> R$ 9.300,00 a R$ 11.200,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior (Aceita Tecnólogos reconhecidos)</li>
-                            <li><strong>Urgência:</strong> Avaliação curricular determinante para investidura</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20diploma%20para%20o%20IBGE" class="btn-wsp-card" target="_blank">Atendimento para IBGE 📲</a>
-                </div>
-
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20Policia%20Civil" class="btn-wsp-card" target="_blank">💬 Atendimento para Polícia Civil</a>
             </div>
-        </div>
 
-        <!-- 4. ÁREA FISCAL & CONTROLE (6 EDITAIS) -->
-        <div class="category-block" id="fiscal">
-            <h3 class="category-title">💼 Área Fiscal & Controle</h3>
-            <div class="grid-editais">
-                
-                <div class="card-edital" data-status="autorizados">
-                    <div>
-                        <span class="card-tag tag-autorizados">Autorizados</span>
-                        <h3>Receita Federal do Brasil (RFB)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Auditor-Fiscal e Analista-Tributário</li>
-                            <li><strong>Remuneração:</strong> R$ 13.927,99 a R$ 24.113,71</li>
-                            <li><strong>Requisito:</strong> Nível Superior em QUALQUER área (Tecnólogo e-MEC)</li>
-                            <li><strong>Urgência:</strong> Apresentação inegociável de diploma válido</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20graduacao%20para%20Receita%20Federal" class="btn-wsp-card" target="_blank">Atendimento para Receita 📲</a>
+            <div class="card-edital" data-status="abertas">
+                <div>
+                    <span class="card-tag">Inscrições Abertas</span>
+                    <h3>Polícia Militar do DF (PMDF)</h3>
+                    <p>Comprovação de nível superior reconhecido pelo MEC para ingresso imediato no curso de formação.</p>
                 </div>
-
-                <div class="card-edital" data-status="abertas">
-                    <div>
-                        <span class="card-tag tag-abertas">Inscrições Abertas</span>
-                        <h3>Controladoria-Geral da União (CGU)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Auditor Federal de Finanças e Controle</li>
-                            <li><strong>Remuneração:</strong> R$ 20.000,00 a R$ 22.800,00</li>
-                            <li><strong>Requisito:</strong> Curso Superior completo com registro oficial</li>
-                            <li><strong>Urgência:</strong> Homologação prévia exigida no envio de títulos</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20diploma%20para%20a%20CGU" class="btn-wsp-card" target="_blank">Atendimento para CGU 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="previstos">
-                    <div>
-                        <span class="card-tag tag-previstos">Previstos</span>
-                        <h3>Tribunal de Contas da União (TCU)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Auditor Federal de Controle Externo</li>
-                            <li><strong>Remuneração:</strong> R$ 23.500,00 a R$ 34.000,00</li>
-                            <li><strong>Requisito:</strong> Graduação Superior completa em qualquer área</li>
-                            <li><strong>Urgência:</strong> Pontuação decisiva na prova de títulos</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20diploma%20para%20o%20TCU" class="btn-wsp-card" target="_blank">Atendimento para TCU 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="abertas">
-                    <div>
-                        <span class="card-tag tag-abertas">Inscrições Abertas</span>
-                        <h3>SEFAZ Estaduais (AL / RJ / PR)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Auditor Fiscal da Administração Tributária</li>
-                            <li><strong>Remuneração:</strong> R$ 18.000,00 a R$ 28.500,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior / Tecnólogo aceito conforme edital</li>
-                            <li><strong>Urgência:</strong> Regularização imediata de histórico e diploma</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20diploma%20para%20SEFAZ" class="btn-wsp-card" target="_blank">Atendimento para SEFAZ 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="previstos">
-                    <div>
-                        <span class="card-tag tag-previstos">Previstos</span>
-                        <h3>TCE-GO (Tribunal de Contas)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Analista de Controle Externo</li>
-                            <li><strong>Remuneração:</strong> R$ 11.862,19 a R$ 18.000,00</li>
-                            <li><strong>Requisito:</strong> Nível Superior e Técnico com homologação oficial</li>
-                            <li><strong>Urgência:</strong> Fase de títulos e verificação documental rápida</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Preciso%20de%20diploma%20para%20TCE-GO" class="btn-wsp-card" target="_blank">Atendimento para TCE-GO 📲</a>
-                </div>
-
-                <div class="card-edital" data-status="autorizados">
-                    <div>
-                        <span class="card-tag tag-autorizados">Autorizados</span>
-                        <h3>ISS Municipais (Manaus / BH / Curitiba)</h3>
-                        <ul class="edital-info">
-                            <li><strong>Cargos:</strong> Auditor Fiscal de Tributos Municipais</li>
-                            <li><strong>Remuneração:</strong> R$ 15.000,00 a R$ 26.000,00</li>
-                            <li><strong>Requisito:</strong> Graduação Superior em qualquer área / Tecnólogo</li>
-                            <li><strong>Urgência:</strong> Posse condicionada à validação legal do MEC</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5561999999999?text=Quero%20diploma%20para%20ISS%20Municipal" class="btn-wsp-card" target="_blank">Atendimento para ISS 📲</a>
-                </div>
-
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20PMDF" class="btn-wsp-card" target="_blank">💬 Atendimento para PMDF</a>
             </div>
-        </div>
 
+            <div class="card-edital" data-status="abertas">
+                <div>
+                    <span class="card-tag">Inscrições Abertas</span>
+                    <h3>Correios (Cargos de Nível Superior)</h3>
+                    <p>Aceleração de diploma para contratação e comprovação de escolaridade nas áreas administrativas.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20Correios" class="btn-wsp-card" target="_blank">💬 Atendimento para Correios</a>
+            </div>
+
+            <div class="card-edital" data-status="abertas">
+                <div>
+                    <span class="card-tag">Inscrições Abertas</span>
+                    <h3>SEFAZ Estaduais (Auditor Fiscal)</h3>
+                    <p>Regularização e entrega de diploma superior com publicação oficial para posse dentro do prazo.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20SEFAZ" class="btn-wsp-card" target="_blank">💬 Atendimento para SEFAZ</a>
+            </div>
+
+            <!-- 6 EDITAIS: AUTORIZADOS -->
+            <div class="card-edital" data-status="autorizados">
+                <div>
+                    <span class="card-tag">Autorizados</span>
+                    <h3>Polícia Federal & Rodoviária Federal</h3>
+                    <p>Aceleração de graduação reconhecida pelo MEC a tempo do curso de formação e posse.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20Policia%20Federal%20e%20PRF" class="btn-wsp-card" target="_blank">💬 Atendimento para PF & PRF</a>
+            </div>
+
+            <div class="card-edital" data-status="autorizados">
+                <div>
+                    <span class="card-tag">Autorizados</span>
+                    <h3>Polícia Civil do DF (PCDF)</h3>
+                    <p>Emissão com validação e-MEC para Agente de Custódia e Perito na prova de títulos.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20PCDF" class="btn-wsp-card" target="_blank">💬 Atendimento para PCDF</a>
+            </div>
+
+            <div class="card-edital" data-status="autorizados">
+                <div>
+                    <span class="card-tag">Autorizados</span>
+                    <h3>INSS (Técnico e Analista)</h3>
+                    <p>Aceleração de curso superior para cumprimento dos novos requisitos de investidura do cargo.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20o%20INSS" class="btn-wsp-card" target="_blank">💬 Atendimento para o INSS</a>
+            </div>
+
+            <div class="card-edital" data-status="autorizados">
+                <div>
+                    <span class="card-tag">Autorizados</span>
+                    <h3>Receita Federal do Brasil (RFB)</h3>
+                    <p>Homologação documental de curso superior para posse nos cargos de Auditor e Analista.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20Receita%20Federal" class="btn-wsp-card" target="_blank">💬 Atendimento para Receita</a>
+            </div>
+
+            <div class="card-edital" data-status="autorizados">
+                <div>
+                    <span class="card-tag">Autorizados</span>
+                    <h3>Tribunais de Justiça (TJ-PR / TJ-SC)</h3>
+                    <p>Consultoria acadêmica rápida para pontuação máxima em títulos e investidura judicial.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20TJs" class="btn-wsp-card" target="_blank">💬 Atendimento para TJs</a>
+            </div>
+
+            <div class="card-edital" data-status="autorizados">
+                <div>
+                    <span class="card-tag">Autorizados</span>
+                    <h3>Controladoria-Geral da União (CGU)</h3>
+                    <p>Regularização e registo em diário oficial para nomeação nas carreiras federais de controle.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20a%20CGU" class="btn-wsp-card" target="_blank">💬 Atendimento para CGU</a>
+            </div>
+
+            <!-- 6 EDITAIS: PREVISTOS -->
+            <div class="card-edital" data-status="previstos">
+                <div>
+                    <span class="card-tag">Previstos</span>
+                    <h3>Concursos de Prefeituras e Câmaras</h3>
+                    <p>Diploma superior expresso com nota no MEC para assumir vagas municipais de nível superior.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20Prefeituras" class="btn-wsp-card" target="_blank">💬 Atendimento para Prefeituras</a>
+            </div>
+
+            <div class="card-edital" data-status="previstos">
+                <div>
+                    <span class="card-tag">Previstos</span>
+                    <h3>Ministério Público da União (MPU)</h3>
+                    <p>Conclusão e validação rápida de tecnólogo reconhecido para atender à nova exigência de posse.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20o%20MPU" class="btn-wsp-card" target="_blank">💬 Atendimento para MPU</a>
+            </div>
+
+            <div class="card-edital" data-status="previstos">
+                <div>
+                    <span class="card-tag">Previstos</span>
+                    <h3>Tribunais Regionais Federais (TRF)</h3>
+                    <p>Adequação curricular e antecipação de diploma para aproveitamento em cadastro de reserva.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20o%20TRF" class="btn-wsp-card" target="_blank">💬 Atendimento para TRF</a>
+            </div>
+
+            <div class="card-edital" data-status="previstos">
+                <div>
+                    <span class="card-tag">Previstos</span>
+                    <h3>Polícia Penal (Vários Estados)</h3>
+                    <p>Regularização rápida de nível superior para atender aos editais e convocações de 2026/2027.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20Policia%20Penal" class="btn-wsp-card" target="_blank">💬 Atendimento para Polícia Penal</a>
+            </div>
+
+            <div class="card-edital" data-status="previstos">
+                <div>
+                    <span class="card-tag">Previstos</span>
+                    <h3>IBGE Efetivo (Carreira Permanente)</h3>
+                    <p>Validação acadêmica completa para garantia de posse nos cargos de tecnólogo e analista.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20o%20IBGE" class="btn-wsp-card" target="_blank">💬 Atendimento para IBGE</a>
+            </div>
+
+            <div class="card-edital" data-status="previstos">
+                <div>
+                    <span class="card-tag">Previstos</span>
+                    <h3>Tribunal de Contas da União (TCU)</h3>
+                    <p>Orientação acadêmica e agilização documental para pontuação em títulos e nomeação.</p>
+                </div>
+                <a href="https://wa.me/5561999999999?text=Atendimento%20para%20o%20TCU" class="btn-wsp-card" target="_blank">💬 Atendimento para TCU</a>
+            </div>
+
+        </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
         <p>© 2026 Hélio Garcia - Assessoria Acadêmica Educacional. Todos os direitos reservados.</p>
-        <p style="margin-top: 6px; font-size: 0.8rem; color: #6ee7b7;">Regularização e aceleração acadêmica em conformidade com as diretrizes do MEC e editais de concursos públicos.</p>
     </footer>
 
-    <!-- Script de Filtro em Tempo Real -->
+    <!-- Script de Filtro -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const botoesFiltro = document.querySelectorAll(".btn-filtro");
+            const botoes = document.querySelectorAll(".btn-filtro");
             const cards = document.querySelectorAll(".card-edital");
-            const blocosCategorias = document.querySelectorAll(".category-block");
 
-            botoesFiltro.forEach(botao => {
-                botao.addEventListener("click", function () {
-                    // Atualiza o estado visual ativo dos botões
-                    botoesFiltro.forEach(b => b.classList.remove("active"));
+            botoes.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    botoes.forEach(function (b) { b.classList.remove("active"); });
                     this.classList.add("active");
 
                     const filtro = this.getAttribute("data-filter");
 
-                    // Filtra cada card individualmente
-                    cards.forEach(card => {
-                        const statusCard = card.getAttribute("data-status");
-
-                        if (filtro === "todos" || statusCard === filtro) {
+                    cards.forEach(function (card) {
+                        const status = card.getAttribute("data-status");
+                        if (filtro === "todos" || status === filtro) {
                             card.style.display = "flex";
                         } else {
                             card.style.display = "none";
-                        }
-                    });
-
-                    // Oculta a secção da categoria se não houver editais visíveis nela
-                    blocosCategorias.forEach(bloco => {
-                        const cardsVisiveis = bloco.querySelectorAll('.card-edital[style*="display: flex"]');
-                        if (filtro !== "todos" && cardsVisiveis.length === 0) {
-                            bloco.style.display = "none";
-                        } else {
-                            bloco.style.display = "block";
                         }
                     });
                 });
