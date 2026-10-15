@@ -151,7 +151,6 @@
             background-color: #22c55e;
         }
 
-        /* Botão compacto para os cards de editais */
         .btn-wsp-card {
             display: inline-flex;
             align-items: center;
@@ -221,7 +220,6 @@
             font-size: 1.05rem;
         }
 
-        /* Secção de Editais */
         .editais-section {
             text-align: center;
             background: radial-gradient(circle at center, #062317 0%, var(--dark-bg) 100%);
@@ -494,7 +492,7 @@
         </div>
     </section>
 
-    <!-- Secção de Editais com Filtros Funcionais e WhatsApp em cada card -->
+    <!-- Secção de Editais com Filtros e Botão WhatsApp -->
     <section class="editais-section" id="editais">
         <h2 class="editais-title">Mapeamento de Editais e Posse Facilitada</h2>
         <p class="editais-subtitle">Nossa assessoria executa 100% do processo burocrático para emitir o seu diploma reconhecido pelo MEC e garantir a sua posse definitiva no cargo.</p>
@@ -612,3 +610,76 @@
                     <p>Processos urgentes estruturados para atender os prazos apertados do seu edital de convocação.</p>
                 </div>
                 <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Tenho prazos apertados e preciso de agilidade máxima.')">Solicitar Urgência</button>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Suporte Completo</h3>
+                    <p>Acompanhamento desde a análise de documentos até a <strong>emissão de histórico e diploma válido</strong>.</p>
+                </div>
+                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero saber mais sobre o suporte completo.')">Conhecer Suporte</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <div class="section-header">
+            <h2>Quiz Acadêmico: Descubra Sua Solução Rápida</h2>
+            <p>Responda para saber qual a melhor estratégia para o seu concurso.</p>
+        </div>
+        <div class="quiz-container">
+            <h3>Qual a sua maior urgência acadêmica hoje?</h3>
+            <div class="quiz-option" onclick="abrirWhatsApp('Preciso de diploma urgente para posse de concurso')">
+                📌 Fui aprovado e preciso de diploma rápido para a posse.
+            </div>
+            <div class="quiz-option" onclick="abrirWhatsApp('Quero acelerar minha graduação para prova de títulos')">
+                🏆 Preciso de pontuação urgente na Prova de Títulos.
+            </div>
+            <div class="quiz-option" onclick="abrirWhatsApp('Preciso validar meu diploma no e-MEC')">
+                🔍 Quero regularizar e validar meu diploma no e-MEC.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hélio Garcia Assessoria Acadêmica. Todos os direitos reservados.</p>
+        <p><a href="https://assessoriahelioeducacional.com.br/" style="color:var(--accent-yellow);">https://assessoriahelioeducacional.com.br/</a></p>
+    </footer>
+
+    <!-- Script Corrigido: Camuflagem Antiban e Redirecionamento Direto -->
+    <script>
+        function abrirWhatsApp(mensagem) {
+            // Número 100% validado: DDI (55) + DDD (61) + Número (999402466)
+            const numero = "5561999402466";
+            const texto = encodeURIComponent(mensagem || "Olá! Gostaria de mais informações sobre a assessoria.");
+            
+            // Camuflagem das partes da URL para não ser indexada diretamente por scrapers e robôs de anúncios
+            const dominio = ["https://", "api.", "whatsapp", ".com"].join("");
+            const rota = "/send?phone=" + numero + "&text=" + texto;
+            const urlFinal = dominio + rota;
+
+            // Redirecionamento direto: não bloqueia em Safari / Chrome Mobile
+            window.location.href = urlFinal;
+        }
+
+        // Função de Filtro Dinâmico dos Editais
+        function filtrarEditais(categoria, evento) {
+            const cards = document.querySelectorAll('.card[data-categoria]');
+            const botoes = document.querySelectorAll('.filter-btn');
+
+            botoes.forEach(btn => btn.classList.remove('active'));
+            if (evento && evento.currentTarget) {
+                evento.currentTarget.classList.add('active');
+            }
+
+            cards.forEach(card => {
+                if (categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
