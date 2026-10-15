@@ -161,7 +161,7 @@
             background-color: var(--whatsapp-green);
             color: #000;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             border-radius: 30px;
             text-decoration: none;
             transition: all 0.3s;
@@ -184,11 +184,12 @@
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-            border: 2px solid var(--accent-yellow);
-            background-color: #000;
+            border: 2px solid var(--card-border);
+            background: #010a06;
         }
 
-        .vsl-container iframe {
+        .vsl-container iframe,
+        .vsl-container video {
             position: absolute;
             top: 0;
             left: 0;
@@ -197,9 +198,10 @@
             border: 0;
         }
 
-        section {
-            padding: 90px 6%;
-            border-bottom: 1px solid var(--card-border);
+        /* Seções e Cards de Editais */
+        .section-editais {
+            padding: 80px 6%;
+            border-top: 1px solid var(--card-border);
         }
 
         .section-header {
@@ -210,9 +212,13 @@
 
         .section-header h2 {
             font-family: 'Outfit', sans-serif;
-            font-size: 2.3rem;
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .section-header h2 span {
             color: var(--accent-yellow);
-            margin-bottom: 15px;
         }
 
         .section-header p {
@@ -220,340 +226,40 @@
             font-size: 1.05rem;
         }
 
-        /* Seção de Editais */
-        .editais-section {
-            text-align: center;
-            background: radial-gradient(circle at center, #062317 0%, var(--dark-bg) 100%);
+        .category-block {
+            margin-bottom: 70px;
         }
 
-        .editais-title {
+        .category-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 800;
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .editais-subtitle {
-            color: var(--text-muted);
-            font-size: 1.15rem;
-            max-width: 750px;
-            margin: 0 auto 35px;
-        }
-
-        .editais-banner-info {
-            display: inline-flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            background: rgba(6, 35, 23, 0.8);
-            border: 1px solid var(--card-border);
-            border-radius: 50px;
-            padding: 12px 28px;
-            max-width: 800px;
-            width: 100%;
-            margin-bottom: 40px;
-            font-size: 0.95rem;
-        }
-
-        .editais-banner-info span {
+            font-size: 1.6rem;
+            color: var(--accent-yellow-light);
             display: flex;
             align-items: center;
-            gap: 8px;
-            color: var(--text-light);
+            gap: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--card-border);
         }
 
-        .tag-active {
-            background: var(--primary-green);
-            color: #ffffff;
-            padding: 6px 16px;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 0.85rem;
-        }
-
-        .editais-filters {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-        }
-
-        .filter-btn {
-            background: transparent;
-            border: 1px solid var(--card-border);
-            color: var(--text-muted);
-            padding: 12px 28px;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .filter-btn.active, .filter-btn:hover {
-            background: var(--accent-yellow);
-            color: #000;
-            border-color: var(--accent-yellow);
-            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
-        }
-
-        .grid {
+        .grid-editais {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
         }
 
-        .card {
-            background: var(--card-bg);
+        .card-edital {
+            background-color: var(--card-bg);
             border: 1px solid var(--card-border);
-            padding: 30px;
             border-radius: 16px;
-            transition: all 0.3s;
-            text-align: left;
+            padding: 24px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            transition: all 0.3s ease;
+            position: relative;
         }
 
-        .card:hover {
-            border-color: var(--accent-yellow);
+        .card-edital:hover {
             transform: translateY(-5px);
-        }
-
-        .card h3 {
-            color: var(--primary-green-dark);
-            background: var(--text-muted);
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-        }
-
-        .card-tag {
-            display: inline-block;
-            font-size: 0.8rem;
-            font-weight: 700;
-            padding: 3px 10px;
-            border-radius: 4px;
-            background: rgba(245, 158, 11, 0.2);
-            color: var(--accent-yellow);
-            margin-bottom: 10px;
-        }
-
-        .quiz-container {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 20px;
-            padding: 40px;
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .quiz-option {
-            background: var(--dark-bg);
-            border: 1px solid var(--card-border);
-            padding: 15px 20px;
-            margin: 12px 0;
-            border-radius: 10px;
-            cursor: pointer;
-            text-align: left;
-            transition: all 0.3s;
-        }
-
-        .quiz-option:hover {
-            border-color: var(--accent-yellow);
-            background: #093825;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 6%;
-            background: #020b07;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 900px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-            nav {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .hero {
-                grid-template-columns: 1fr;
-                padding-top: 180px;
-            }
-            .editais-banner-info {
-                flex-direction: column;
-                border-radius: 20px;
-                gap: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="logo">HÉLIO GARCIA <span>MEC</span></div>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#facilita">Facilita</a>
-            <a href="#graduacoes">Graduações</a>
-            <a href="#editais">Editais</a>
-            <a href="#legalidades">Riscos e Legalidades</a>
-            <a href="#porque-nos">Por Que Nós</a>
-            <a href="#quiz">Quiz</a>
-        </nav>
-    </header>
-
-    <section class="hero" id="inicio">
-        <div class="hero-text">
-            <h1><span>Assessoria Acadêmica</span> Hélio Garcia para Concursos e Posse Rápida</h1>
-            <p>Assista ao vídeo e veja como a nossa <strong>assessoria educacional para editais</strong> assume 100% da burocracia acadêmica para você <strong>comprovar nível superior com urgência</strong> e obter seu <strong>diploma reconhecido pelo MEC</strong>.</p>
-            <button type="button" class="btn-wsp" onclick="chamarWhatsApp('Olá! Assisti ao vídeo e quero falar com um consultor sobre assessoria acadêmica.')">
-                💬 Falar com o Consultor no WhatsApp
-            </button>
-        </div>
-
-        <div class="vsl-container">
-            <iframe src="https://www.youtube.com/embed/m9vzqY-zNuQ?rel=0&autoplay=0" title="Hélio Garcia Graduações e Concursos VSL" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section id="facilita">
-        <div class="section-header">
-            <h2>Facilita: Como Funciona o Nosso Processo</h2>
-            <p>Entenda como a consultoria de Hélio Garcia descomplica a sua vida acadêmica.</p>
-        </div>
-        <div class="grid">
-            <div class="card">
-                <div>
-                    <h3>1. Análise do Edital</h3>
-                    <p>Analisamos as exigências do seu concurso para indicar o melhor caminho de <strong>acelerar faculdade para edital</strong>.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Quero solicitar uma Análise de Edital com a consultoria.')">Falar sobre Etapa 1</button>
-            </div>
-            <div class="card">
-                <div>
-                    <h3>2. Matrícula Expressa</h3>
-                    <p>Acesso a programas de <strong>faculdade expressa para posse</strong> e <strong>tecnólogo reconhecido pelo MEC rápido</strong>.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Gostaria de saber mais sobre a Matrícula Expressa.')">Falar sobre Etapa 2</button>
-            </div>
-            <div class="card">
-                <div>
-                    <h3>3. Emissão Válida</h3>
-                    <p>Acompanhamento na <strong>emissão de histórico e diploma válido</strong> com registro no diário oficial.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Quero tirar dúvidas sobre a Emissão do Diploma Válido.')">Falar sobre Etapa 3</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="graduacoes">
-        <div class="section-header">
-            <h2>Graduações Rápidas Reconhecidas pelo MEC</h2>
-            <p>Cursos superiores focados em quem precisa <strong>comprovar nível superior com urgência</strong>.</p>
-        </div>
-        <div class="grid">
-            <div class="card">
-                <div>
-                    <h3>Tecnólogos Express</h3>
-                    <p>Cursos curtos focados na apresentação rápida para editais de carreiras policiais, administrativas e tribunais.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Tenho interesse nos Tecnólogos Express.')">Consultar Tecnólogos</button>
-            </div>
-            <div class="card">
-                <div>
-                    <h3>Segunda Graduação</h3>
-                    <p>Para quem já é graduado e precisa de nova habilitação rápida para <strong>apresentar títulos em concurso</strong>.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Gostaria de saber mais sobre Segunda Graduação para Títulos.')">Consultar 2ª Graduação</button>
-            </div>
-            <div class="card">
-                <div>
-                    <h3>Aproveitamento de Estudos</h3>
-                    <p>Aproveite disciplinas cursadas para concluir a <strong>faculdade rápida reconhecida pelo MEC</strong> em tempo recorde.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Quero saber sobre Aproveitamento de Estudos.')">Consultar Aproveitamento</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Editais com Filtros Instantâneos -->
-    <section class="editais-section" id="editais">
-        <h2 class="editais-title">Mapeamento de Editais e Posse Facilitada</h2>
-        <p class="editais-subtitle">Nossa assessoria executa 100% do processo burocrático para emitir o seu diploma reconhecido pelo MEC e garantir a sua posse definitiva no cargo.</p>
-        
-        <div class="editais-banner-info">
-            <span>🛡️ Viabilização Documental Completa: Homologação no e-MEC e DOU.</span>
-            <span class="tag-active">Editais Ativos 2026</span>
-        </div>
-
-        <div class="editais-filters">
-            <button type="button" class="filter-btn active" onclick="filtrarCards('todos', this)">Todos os Editais</button>
-            <button type="button" class="filter-btn" onclick="filtrarCards('abertas', this)">Inscrições Abertas</button>
-            <button type="button" class="filter-btn" onclick="filtrarCards('autorizados', this)">Autorizados</button>
-            <button type="button" class="filter-btn" onclick="filtrarCards('previstos', this)">Previstos</button>
-        </div>
-
-        <div class="grid" id="lista-editais">
-            <!-- Inscrições Abertas -->
-            <div class="card card-edital" data-filtro="abertas">
-                <div>
-                    <span class="card-tag">Inscrições Abertas</span>
-                    <h3>Concurso Nacional Unificado (CNU)</h3>
-                    <p>Validação de tecnólogo e superior para posse imediata nas vagas federais.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Fui aprovado ou pretendo o Concurso Nacional Unificado (CNU) e preciso de assessoria para diploma.')">💬 Atendimento para o CNU</button>
-            </div>
-            
-            <div class="card card-edital" data-filtro="abertas">
-                <div>
-                    <span class="card-tag">Inscrições Abertas</span>
-                    <h3>Tribunais Regionais (TRT / TRE)</h3>
-                    <p>Assessoria completa para homologação de diploma e apresentação de títulos.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Preciso de assessoria para editais de Tribunais (TRT / TRE).')">💬 Atendimento para Tribunais</button>
-            </div>
-
-            <!-- Autorizados -->
-            <div class="card card-edital" data-filtro="autorizados">
-                <div>
-                    <span class="card-tag">Autorizados</span>
-                    <h3>Polícia Federal & Rodoviária</h3>
-                    <p>Aceleração de graduação exigida para o curso de formação e posse no cargo.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Preciso de suporte urgente para Concurso da Polícia Federal / Rodoviária.')">💬 Atendimento para Polícia</button>
-            </div>
-
-            <div class="card card-edital" data-filtro="autorizados">
-                <div>
-                    <span class="card-tag">Autorizados</span>
-                    <h3>Secretaria da Fazenda (Sefaz)</h3>
-                    <p>Regularização documental expressa e registro válido no diário oficial.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Tenho interesse em assessoria para editais Sefaz.')">💬 Atendimento para Sefaz</button>
-            </div>
-
-            <!-- Previstos -->
-            <div class="card card-edital" data-filtro="previstos">
-                <div>
-                    <span class="card-tag">Previstos</span>
-                    <h3>Concursos de Prefeituras e Câmaras</h3>
-                    <p>Planejamento acadêmico antecipado para editais previstos no próximo semestre.</p>
-                </div>
-                <button type="button
+            border-color: var(--primary-
