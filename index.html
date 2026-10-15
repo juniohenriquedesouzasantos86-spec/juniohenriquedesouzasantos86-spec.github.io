@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+[23:51, 14/10/2026] Lf: <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hélio Garcia | Assessoria Acadêmica para Concursos & Graduação Rápida MEC</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Hélio Garcia Assessoria Acadêmica para concursos públicos: acelere sua faculdade para edital, regularização de diploma e-mec, graduação rápida para prova de títulos e validação para posse em cargo público.">
+    <meta name="keywords" content="assessoria acadêmica para concursos, diploma reconhecido pelo mec, como validar diploma para posse, regularização de diploma para concurso, diploma superior para concurso público, acelerar faculdade para edital, graduação…
+[23:57, 14/10/2026] Lf: <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -190,7 +200,7 @@
             font-size: 1.05rem;
         }
 
-        /* Estrutura Especial para Editais (Conforme Imagem) */
+        /* Secção de Editais */
         .editais-section {
             text-align: center;
             background: radial-gradient(circle at center, #062317 0%, var(--dark-bg) 100%);
@@ -302,6 +312,17 @@
         .card p {
             color: var(--text-light);
             font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .card-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 4px;
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--accent-yellow);
         }
 
         .quiz-container {
@@ -430,7 +451,7 @@
         </div>
     </section>
 
-    <!-- Secção de Editais com o Layout Escolhido -->
+    <!-- Secção de Editais com Filtros Funcionais -->
     <section class="editais-section" id="editais">
         <h2 class="editais-title">Mapeamento de Editais e Posse Facilitada</h2>
         <p class="editais-subtitle">Nossa assessoria executa 100% do processo burocrático para emitir o seu diploma reconhecido pelo MEC e garantir a sua posse definitiva no cargo.</p>
@@ -441,24 +462,42 @@
         </div>
 
         <div class="editais-filters">
-            <button class="filter-btn active">Todos os Editais</button>
-            <button class="filter-btn">Inscrições Abertas</button>
-            <button class="filter-btn">Autorizados</button>
-            <button class="filter-btn">Previstos</button>
+            <button class="filter-btn active" onclick="filtrarEditais('todos')">Todos os Editais</button>
+            <button class="filter-btn" onclick="filtrarEditais('abertas')">Inscrições Abertas</button>
+            <button class="filter-btn" onclick="filtrarEditais('autorizados')">Autorizados</button>
+            <button class="filter-btn" onclick="filtrarEditais('previstos')">Previstos</button>
         </div>
 
-        <div class="grid">
-            <div class="card">
-                <h3>Regularização para o Cebraspe</h3>
-                <p>Evite desclassificação! Fazemos a <strong>regularizar faculdade para o cebraspe</strong> no prazo da documentação.</p>
+        <div class="grid" id="lista-editais">
+            <div class="card" data-categoria="abertas">
+                <h3>Concurso Nacional Unificado (CNU)</h3>
+                <p>Validação de tecnólogo e superior para posse imediata nas vagas federais.</p>
+                <span class="card-tag">Inscrições Abertas</span>
             </div>
-            <div class="card">
-                <h3>Prova de Títulos</h3>
-                <p>Utilize sua <strong>graduação rápida para prova de títulos</strong> e suba posições cruciais no resultado final.</p>
+            <div class="card" data-categoria="abertas">
+                <h3>Tribunais Regionais (TRT / TRE)</h3>
+                <p>Assessoria completa para homologação de diploma e apresentação de títulos.</p>
+                <span class="card-tag">Inscrições Abertas</span>
             </div>
-            <div class="card">
-                <h3>Conselhos de Classe</h3>
-                <p>Soluções para <strong>validar faculdade para conselho de classe</strong> (CRA, CREA, Coren, etc.) sem complicações.</p>
+            <div class="card" data-categoria="autorizados">
+                <h3>Polícia Federal & Rodoviária</h3>
+                <p>Aceleração de graduação exigida para o curso de formação e posse no cargo.</p>
+                <span class="card-tag">Autorizados</span>
+            </div>
+            <div class="card" data-categoria="autorizados">
+                <h3>Secretaria da Fazenda (Sefaz)</h3>
+                <p>Regularização documental expressa e registro válido no diário oficial.</p>
+                <span class="card-tag">Autorizados</span>
+            </div>
+            <div class="card" data-categoria="previstos">
+                <h3>Concursos de Prefeituras e Câmaras</h3>
+                <p>Planejamento acadêmico antecipado para editais previstos no próximo semestre.</p>
+                <span class="card-tag">Previstos</span>
+            </div>
+            <div class="card" data-categoria="previstos">
+                <h3>Carreiras Jurídicas e Bancas Cebraspe</h3>
+                <p>Garantia de conformidade total com exigências de nível superior das bancas.</p>
+                <span class="card-tag">Previstos</span>
             </div>
         </div>
     </section>
@@ -528,6 +567,25 @@
         <p>&copy; 2026 Hélio Garcia Assessoria Acadêmica. Todos os direitos reservados.</p>
         <p><a href="https://juniohenriquedesouzasantos86-spec.github.io/" style="color:var(--accent-yellow);">https://juniohenriquedesouzasantos86-spec.github.io/</a></p>
     </footer>
+
+    <!-- Script de Filtro Interativo dos Editais -->
+    <script>
+        function filtrarEditais(categoria) {
+            const cards = document.querySelectorAll('.card[data-categoria]');
+            const botoes = document.querySelectorAll('.filter-btn');
+
+            botoes.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
