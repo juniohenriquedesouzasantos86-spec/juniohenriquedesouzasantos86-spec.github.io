@@ -1,13 +1,12 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assessoria Acadêmica para Concursos & Graduação Rápida MEC</title>
+    <title>Hélio Garcia | Assessoria Acadêmica para Concursos & Graduação Rápida MEC</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Assessoria acadêmica para concursos públicos: acelere sua faculdade para edital, regularização de diploma e-mec, graduação rápida para prova de títulos e validação para posse em cargo público.">
+    <meta name="description" content="Hélio Garcia Assessoria Acadêmica para concursos públicos: acelere sua faculdade para edital, regularização de diploma e-mec, graduação rápida para prova de títulos e validação para posse em cargo público.">
     <meta name="keywords" content="assessoria acadêmica para concursos, diploma reconhecido pelo mec, como validar diploma para posse, regularização de diploma para concurso, diploma superior para concurso público, acelerar faculdade para edital, graduação rápida para prova de títulos, tecnólogo reconhecido pelo mec rápido, validar faculdade para conselho de classe, como assumir cargo público sem diploma, emissão de diploma com diário oficial, legalização de diploma e-mec, assessoria para homologação de diploma, como apresentar títulos em concurso, faculdade expressa para posse, comprovar nível superior com urgência, regularizar faculdade para o cebraspe, emissão de histórico e diploma válido, consultoria educacional para editais, faculdade rápida reconhecida pelo mec">
     <meta name="robots" content="index, follow">
     
@@ -51,7 +50,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 16px 6%;
-            background: rgba(3, 20, 13, 0.85);
+            background: rgba(3, 20, 13, 0.9);
             backdrop-filter: blur(12px);
             position: fixed;
             width: 100%;
@@ -94,19 +93,19 @@
             color: var(--accent-yellow);
         }
 
-        /* Hero / Destaque Principal */
+        /* Hero / Destaque VSL Principal */
         .hero {
-            padding: 150px 6% 80px;
+            padding: 140px 6% 80px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             align-items: center;
-            background: radial-gradient(circle at 10% 20%, rgba(5, 150, 105, 0.15) 0%, transparent 50%);
+            background: radial-gradient(circle at 10% 20%, rgba(5, 150, 105, 0.18) 0%, transparent 50%);
         }
 
         .hero-text h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             line-height: 1.2;
             margin-bottom: 20px;
             color: #ffffff;
@@ -128,35 +127,47 @@
         .btn-wsp {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            padding: 16px 32px;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px 36px;
             background-color: var(--whatsapp-green);
             color: #000;
             font-weight: 800;
             border-radius: 50px;
             text-decoration: none;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             transition: all 0.3s;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            box-shadow: 0 4px 25px rgba(37, 211, 102, 0.4);
+            width: 100%;
+            max-width: 420px;
         }
 
         .btn-wsp:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+            background-color: #22c55e;
         }
 
-        .hero-card {
-            background: var(--card-bg);
+        /* Container VSL (Reprodutor de Vídeo) */
+        .vsl-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
             border: 2px solid var(--accent-yellow);
-            padding: 35px;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            background-color: #000;
         }
 
-        .hero-card h3 {
-            color: var(--accent-yellow);
-            font-size: 1.4rem;
-            margin-bottom: 15px;
+        .vsl-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         /* Seções Gerais */
@@ -265,7 +276,7 @@
             }
             .hero {
                 grid-template-columns: 1fr;
-                padding-top: 200px;
+                padding-top: 180px;
             }
         }
     </style>
@@ -274,7 +285,7 @@
 
     <!-- Navegação / Menu 6 Opções -->
     <header>
-        <div class="logo">ASSESSORIA <span>MEC</span></div>
+        <div class="logo">HÉLIO GARCIA <span>MEC</span></div>
         <nav>
             <a href="#inicio">Início</a>
             <a href="#facilita">Facilita</a>
@@ -286,18 +297,19 @@
         </nav>
     </header>
 
-    <!-- Início -->
+    <!-- Início com Vídeo VSL -->
     <section class="hero" id="inicio">
         <div class="hero-text">
-            <h1><span>Assessoria Acadêmica</span> para Concursos e Posse Rápida</h1>
-            <p>Precisa de um <strong>diploma reconhecido pelo MEC</strong> urgente? Oferecemos <strong>consultoria educacional para editais</strong> para você <strong>comprovar nível superior com urgência</strong> e <strong>assumir cargo público sem diploma</strong> pendente.</p>
-            <a href="https://wa.me/556199402466?text=Ol%C3%A1!%20Preciso%20de%20assessoria%20acad%C3%AAmica%20urgente%20para%20concurso." target="_blank" class="btn-wsp">
-                📲 Falar no WhatsApp Agora
+            <h1><span>Assessoria Acadêmica</span> Hélio Garcia para Concursos e Posse Rápida</h1>
+            <p>Assista ao vídeo e veja como a nossa <strong>assessoria educacional para editais</strong> assume 100% da burocracia acadêmica para você <strong>comprovar nível superior com urgência</strong> e obter seu <strong>diploma reconhecido pelo MEC</strong>.</p>
+            <a href="https://wa.me/556199402466?text=Ol%C3%A1!%20Assisti%20ao%20v%C3%ADdeo%20e%20quero%20falar%20com%20um%20consultor%20sobre%20assessoria%20acad%C3%AAmica." target="_blank" class="btn-wsp">
+                💬 Falar com o Consultor no WhatsApp
             </a>
         </div>
-        <div class="hero-card">
-            <h3>⚡ Acelere Sua Faculdade para o Edital</h3>
-            <p>Garanta sua <strong>graduação rápida para prova de títulos</strong> ou convocação do Cebraspe, FGV e Vunesp com total <strong>legalização de diploma e-MEC</strong>.</p>
+
+        <!-- VSL (Vídeo Incorporado) -->
+        <div class="vsl-container">
+            <iframe src="https://www.youtube.com/embed/m9vzqY-zNuQ?rel=0&autoplay=0" title="Hélio Garcia Graduações e Concursos VSL" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -305,7 +317,7 @@
     <section id="facilita">
         <div class="section-header">
             <h2>Facilita: Como Funciona o Nosso Processo</h2>
-            <p>Entenda como nossa <strong>assessoria para homologação de diploma</strong> descomplica sua vida acadêmica.</p>
+            <p>Entenda como a consultoria de Hélio Garcia descomplica a sua vida acadêmica.</p>
         </div>
         <div class="grid">
             <div class="card">
@@ -433,7 +445,7 @@
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 Assessoria Acadêmica para Concursos. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Hélio Garcia Assessoria Acadêmica. Todos os direitos reservados.</p>
         <p><a href="https://juniohenriquedesouzasantos86-spec.github.io/" style="color:var(--accent-yellow);">https://juniohenriquedesouzasantos86-spec.github.io/</a></p>
     </footer>
 
