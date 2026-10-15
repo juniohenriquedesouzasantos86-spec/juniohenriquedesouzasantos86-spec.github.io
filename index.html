@@ -384,6 +384,10 @@
             max-width: 700px;
             margin: 0 auto;
             text-align: center;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .quiz-option {
@@ -395,19 +399,31 @@
             cursor: pointer;
             text-align: left;
             transition: all 0.3s;
+            font-weight: 600;
         }
 
         .quiz-option:hover {
             border-color: var(--accent-yellow);
             background: #093825;
+            transform: translateX(5px);
         }
 
         footer {
             text-align: center;
-            padding: 40px 6%;
+            padding: 50px 6%;
             background: #020b07;
             color: var(--text-muted);
             font-size: 0.9rem;
+        }
+
+        .seo-footer-keywords {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            font-size: 0.8rem;
+            line-height: 1.6;
+            color: #047857;
+            border-bottom: 1px solid rgba(4, 120, 87, 0.2);
+            padding-bottom: 20px;
         }
 
         @media (max-width: 900px) {
@@ -456,7 +472,6 @@
         </div>
 
         <div class="vsl-container">
-            <!-- VSL do YouTube - Substituir Link de Embed se necessário -->
             <iframe src="https://www.youtube.com/embed/m9vzqY-zNuQ?rel=0&autoplay=0" title="Hélio Garcia Graduações e Concursos VSL" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
@@ -503,7 +518,7 @@
         </div>
     </section>
 
-    <!-- Secção de Editais com Filtros Funcionais e Editais 2026/2027 Inseridos -->
+    <!-- Secção de Editais -->
     <section class="editais-section" id="editais">
         <h2 class="editais-title">Mapeamento de Editais e Posse Facilitada</h2>
         <p class="editais-subtitle">Nossa assessoria executa 100% do processo burocrático para emitir o seu diploma reconhecido pelo MEC e garantir a sua posse definitiva no cargo.</p>
@@ -522,7 +537,6 @@
 
         <div class="grid" id="lista-editais">
             
-            <!-- Cartão 1: Comprovação na Data da Posse -->
             <div class="card" data-categoria="abertas">
                 <h3>Comprovação na Data da Posse</h3>
                 <p>Orientação e celeridade administrativa conforme a Súmula 266 do STJ, focando na regularização tempestiva para apresentação documental na posse.</p>
@@ -556,7 +570,6 @@
                 </ul>
             </div>
             
-            <!-- Cartão 2: Servidores Públicos e Plano de Carreira -->
             <div class="card" data-categoria="autorizados">
                 <h3>Servidores Públicos e Plano de Carreira</h3>
                 <p>Assessoria para servidores que buscam progressão salarial, adicional de qualificação ou enquadramento por nível superior e pós-graduação.</p>
@@ -590,7 +603,6 @@
                 </ul>
             </div>
             
-            <!-- Cartão 3: Promoções Executivas e Contratos -->
             <div class="card" data-categoria="previstos">
                 <h3>Promoções Executivas e Contratos</h3>
                 <p>Para diretores, gestores e consultores que precisam de certificação acadêmica formal para assinar projetos, participar de licitações ou assumir diretorias.</p>
@@ -650,7 +662,7 @@
     <section id="porque-nos">
         <div class="section-header">
             <h2>Por Que Escolher Nossa Consultoria Educacional?</h2>
-            <p>Mais de anos auxiliando candidatos a garantirem a vaga dos sonhos no serviço público através de nossa <Strong>assessoria para homologação de diploma</strong>.</p>
+            <p>Mais de anos auxiliando candidatos a garantirem a vaga dos sonhos no serviço público através de nossa <strong>assessoria para homologação de diploma</strong>.</p>
         </div>
         <div class="grid">
             <div class="card">
@@ -668,32 +680,57 @@
         </div>
     </section>
 
+    <!-- Quiz Interativo Atualizado -->
     <section id="quiz">
         <div class="section-header">
             <h2>Quiz Acadêmico: Descubra Sua Solução Rápida</h2>
             <p>Responda para saber qual a melhor estratégia para o seu concurso e obtenha atendimento da nossa equipe de <strong>assessoria acadêmica para concursos</strong>.</p>
         </div>
+        
         <div class="quiz-container">
-            <h3>Qual a sua maior urgência acadêmica hoje?</h3>
-            <div class="quiz-option" onclick="window.location.href='https://wa.me/556199402466?text=Preciso%20de%20diploma%20urgente%20para%20posse%20de%20concurso'">
-                📌 Fui aprovado e preciso de diploma rápido para a posse.
+            <!-- Passo 1 -->
+            <div id="quiz-step-1">
+                <h3 style="margin-bottom: 20px; color: var(--accent-yellow);">Qual o seu objetivo ou nível de escolaridade desejado?</h3>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Bacharelado')">🎓 Bacharelado</div>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Tecnólogo')">🚀 Tecnólogo</div>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Licenciatura')">📚 Licenciatura</div>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Ensino Médio')">🏫 Ensino Médio</div>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Concurso Público')">🏛️ Concurso Público</div>
             </div>
-            <div class="quiz-option" onclick="window.location.href='https://wa.me/556199402466?text=Quero%20acelerar%20minha%20gradua%C3%A7%C3%A3o%20para%20prova%20de%20t%C3%ADtulos'">
-                🏆 Preciso de pontuação urgente na Prova de Títulos.
+
+            <!-- Passo 2 -->
+            <div id="quiz-step-2" style="display: none;">
+                <h3 style="margin-bottom: 20px; color: var(--accent-yellow);">Em relação a esse objetivo, qual é a sua situação atual?</h3>
+                <div class="quiz-option" onclick="avancarQuiz(3, 'iniciei, mas não consegui concluir')">🚧 Iniciei, mas não consegui concluir</div>
+                <div class="quiz-option" onclick="avancarQuiz(3, 'nunca tentei / estou a começar do zero')">🌱 Nunca tentei / Começando do zero</div>
             </div>
-            <div class="quiz-option" onclick="window.location.href='https://wa.me/556199402466?text=Preciso%20validar%20meu%20diploma%20no%20e-MEC'">
-                🔍 Quero regularizar e validar meu diploma no e-MEC.
+
+            <!-- Passo 3 (Resultado) -->
+            <div id="quiz-step-3" style="display: none;">
+                <h3 style="margin-bottom: 15px; color: var(--primary-green); font-size: 1.8rem;">Nós Temos a Solução!</h3>
+                <p style="margin-bottom: 25px; color: var(--text-light); font-size: 1.05rem;">
+                    Não se preocupe! Com a nossa <strong>assessoria acadêmica</strong>, o seu processo será regularizado de forma rápida, segura e 100% legalizada no MEC. Fale com um especialista agora mesmo para dar o próximo passo.
+                </p>
+                <a id="quiz-wsp-btn" href="#" target="_blank" class="btn-wsp" style="max-width: 100%;">
+                    💬 Falar com o Consultor no WhatsApp
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
+        <!-- Palavras-chaves adicionadas de forma orgânica no rodapé para SEO -->
+        <div class="seo-footer-keywords">
+            <strong>Soluções Rápidas e Seguras:</strong> Somos especialistas em <em>assessoria acadêmica para concursos</em>, viabilizando o seu <em>diploma reconhecido pelo MEC</em> e <em>regularização de diploma para concurso</em>. Ajudamos a <em>acelerar faculdade para edital</em>, oferecemos caminhos para <em>graduação rápida para prova de títulos</em> e estruturamos a sua <em>faculdade expressa para posse</em> com total legalidade e emissão em diário oficial.
+        </div>
+        
         <p>&copy; 2026 Hélio Garcia Assessoria Acadêmica. Todos os direitos reservados.</p>
         <p><a href="https://assessoriahelioeducacional.com.br/" style="color:var(--accent-yellow);">https://assessoriahelioeducacional.com.br/</a></p>
     </footer>
 
-    <!-- Script de Filtro Interativo dos Editais -->
+    <!-- Scripts da Página -->
     <script>
+        // Lógica do Filtro de Editais
         function filtrarEditais(categoria) {
             const cards = document.querySelectorAll('.card[data-categoria]');
             const botoes = document.querySelectorAll('.filter-btn');
@@ -708,6 +745,35 @@
                     card.style.display = 'none';
                 }
             });
+        }
+
+        // Lógica do Quiz Interativo
+        let respostasQuiz = [];
+        
+        function avancarQuiz(passo, resposta) {
+            if (resposta) respostasQuiz.push(resposta);
+            
+            // Ocultar todos os passos
+            document.getElementById('quiz-step-1').style.display = 'none';
+            document.getElementById('quiz-step-2').style.display = 'none';
+            document.getElementById('quiz-step-3').style.display = 'none';
+            
+            // Mostrar o passo atual
+            if (passo === 2) {
+                document.getElementById('quiz-step-2').style.display = 'block';
+            } else if (passo === 3) {
+                document.getElementById('quiz-step-3').style.display = 'block';
+                
+                // Montar a mensagem do WhatsApp baseada nas escolhas
+                let mensagem = `Olá! Fiz o quiz no site. O meu objetivo é [${respostasQuiz[0]}] e a minha situação é: [${respostasQuiz[1]}]. Gostaria de saber como a vossa assessoria me pode ajudar.`;
+                let urlWsp = `https://wa.me/556199402466?text=${encodeURIComponent(mensagem)}`;
+                
+                // Atualizar o link do botão
+                document.getElementById('quiz-wsp-btn').href = urlWsp;
+                
+                // Resetar o array de respostas caso a pessoa queira fazer de novo depois
+                respostasQuiz = []; 
+            }
         }
     </script>
 
