@@ -305,75 +305,144 @@
             margin-bottom: 15px;
         }
 
-        .card-tag {
-            display: inline-block;
-            font-size: 0.8rem;
-            font-weight: 700;
-            padding: 3px 10px;
-            border-radius: 4px;
-            background: rgba(245, 158, 11, 0.2);
-            color: var(--accent-yellow);
-        }
-
-        /* Estilo da Lista de Editais Integrada */
-        .hg-editais-lista {
-            margin-top: 18px;
-            padding-top: 14px;
-            border-top: 1px solid rgba(250, 204, 21, 0.22);
-            list-style: none;
-            padding-left: 0;
+        /* Novo Estilo para os Cartões de Editais */
+        .card-edital {
+            background: #1e4062;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 25px;
+            transition: all 0.3s;
+            text-align: left;
+            color: #ffffff;
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
-        
-        .hg-edital-item {
-            background: rgba(15, 23, 42, 0.65);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-left: 3px solid #eab308;
-            border-radius: 8px;
-            padding: 10px 12px;
-            font-size: 0.85rem;
-            line-height: 1.4;
-            color: #e2e8f0;
-            transition: transform 0.2s ease, border-color 0.2s ease;
+
+        .card-edital:hover {
+            border-color: var(--accent-yellow);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
         }
-        
-        .hg-edital-item:hover {
-            transform: translateX(3px);
-            border-color: rgba(234, 179, 8, 0.6);
-        }
-        
-        .hg-edital-topo {
+
+        .card-edital-topo {
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .card-edital-status {
+            display: flex;
+            align-items: center;
             gap: 8px;
-            margin-bottom: 3px;
-        }
-        
-        .hg-edital-nome {
-            font-weight: 700;
-            color: #ffffff;
-            font-size: 0.88rem;
-        }
-        
-        .hg-edital-badge {
-            background: rgba(34, 197, 94, 0.18);
-            color: #4ade80;
-            border: 1px solid rgba(74, 222, 128, 0.35);
-            font-size: 0.68rem;
-            font-weight: 700;
-            padding: 2px 7px;
-            border-radius: 999px;
-            white-space: nowrap;
+            font-size: 0.75rem;
+            font-weight: 800;
             text-transform: uppercase;
+            color: #9acbae;
         }
-        
-        .hg-edital-desc {
-            color: #94a3b8;
+
+        .card-edital-status .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #10e660;
+            border-radius: 50%;
+        }
+        .card-edital-status.previsto .dot {
+            background-color: #f5a623;
+        }
+        .card-edital-status.autorizado .dot {
+            background-color: #3a82f6;
+        }
+
+        .card-edital-marca {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-edital h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.45rem;
+            margin-bottom: 4px;
+        }
+
+        .card-edital-cargo {
+            font-size: 0.9rem;
+            color: #9acbae;
+            margin-bottom: 12px;
+        }
+
+        .card-edital-tag {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card-edital-salario {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .card-edital-salario span {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #9acbae;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .card-edital-salario strong {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6REM;
+        }
+
+        .card-edital-check {
             font-size: 0.8rem;
-            display: block;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .card-edital-check i {
+            color: #10e660;
+            font-size: 1rem;
+        }
+
+        .card-edital-btn {
+            background: #ffffff;
+            color: #1e4062;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 0.85rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+
+        .card-edital-btn:hover {
+            background: var(--accent-yellow);
+            color: #000;
         }
 
         .quiz-container {
@@ -562,120 +631,124 @@
         
         <div class="editais-banner-info">
             <span>🛡️ Viabilização Documental Completa: Homologação no e-MEC e DOU.</span>
-            <span class="tag-active">Editais Ativos 2026/2027</span>
+            <span class="tag-active">&#7968; Editais Ativos 2026</span>
         </div>
 
         <div class="editais-filters">
             <button class="filter-btn active" onclick="filtrarEditais('todos')">Todos os Editais</button>
-            <button class="filter-btn" onclick="filtrarEditais('abertas')">Comprovação na Posse</button>
-            <button class="filter-btn" onclick="filtrarEditais('autorizados')">Planos de Carreira</button>
-            <button class="filter-btn" onclick="filtrarEditais('previstos')">Promoções Executivas</button>
+            <button class="filter-btn" onclick="filtrarEditais('abertas')">Inscrições Abertas</button>
+            <button class="filter-btn" onclick="filtrarEditais('autorizados')">Autorizados</button>
+            <button class="filter-btn" onclick="filtrarEditais('previstos')">Previstos</button>
         </div>
 
         <div class="grid" id="lista-editais">
             
-            <div class="card" data-categoria="abertas">
-                <h3>Comprovação na Data da Posse</h3>
-                <p>Orientação e celeridade administrativa conforme a Súmula 266 do STJ, focando na regularização tempestiva para apresentação documental na posse.</p>
-                <span class="card-tag">Nível Superior</span>
-                
-                <ul class="hg-editais-lista">
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Receita Federal (RFB)</span><span class="hg-edital-badge">2026/2027</span></div>
-                    <span class="hg-edital-desc">146 vagas autorizadas (Auditor e Analista) • Nível Superior em qualquer área na posse.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Banco Central (BACEN)</span><span class="hg-edital-badge">2026/2027</span></div>
-                    <span class="hg-edital-desc">170 vagas autorizadas (Analista e Procurador) • Exigência de diploma apenas na posse.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Controladoria-Geral da União (CGU)</span><span class="hg-edital-badge">Edital 2026/2027</span></div>
-                    <span class="hg-edital-desc">Auditor Federal de Finanças e Controle • Nível Superior reconhecido pelo MEC.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Polícias Civis (PC-PE / PC-SP / PC-AL)</span><span class="hg-edital-badge">2026/2027</span></div>
-                    <span class="hg-edital-desc">+1.700 vagas (Agente, Escrivão e Perito) • Amparo pela Súmula 266 do STJ na posse.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Tribunais (TRT-8, TRT-4, TRF-3 e TJ-ES)</span><span class="hg-edital-badge">2026/2027</span></div>
-                    <span class="hg-edital-desc">Analista e Técnico Judiciário • Comprovação de graduação superior na investidura.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Câmara dos Deputados &amp; TCU</span><span class="hg-edital-badge">2026/2027</span></div>
-                    <span class="hg-edital-desc">184 vagas Analista Legislativo e 100 vagas Auditor TCU • Nível Superior completo.</span>
-                  </li>
-                </ul>
+            <!-- Card 1 -->
+            <div class="card-edital" data-categoria="abertas">
+                <div class="card-edital-topo">
+                    <span class="card-edital-status"><span class="dot"></span> Aberto</span>
+                    <span class="card-edital-marca">&#9889; Hélio Garcia</span>
+                </div>
+                <h2>Polícia Federal (PF)</h2>
+                <span class="card-edital-cargo">Cargo: Agente e Escrivão</span>
+                <div><span class="card-edital-tag">&#128212; Tecnólogo ou Bacharelado Aceito</span></div>
+                <div class="card-edital-salario">
+                    <span>Remuneração Inicial</span>
+                    <strong>R$ 13.649</strong>
+                </div>
+                <span class="card-edital-check"><i class="fas fa-check-circle">&#10004;</i> Registro e-MEC Válido &bull; Diário Oficial</span>
+                <a href="https://wa.me/556199402466?text=Quero%20garantir%20meu%20diploma%20para%20Edital%20PF" class="card-edital-btn" target="_blank">&#9298; ASSEGURAR REQUISITO</a>
             </div>
-            
-            <div class="card" data-categoria="autorizados">
-                <h3>Servidores Públicos e Plano de Carreira</h3>
-                <p>Assessoria para servidores que buscam progressão salarial, adicional de qualificação ou enquadramento por nível superior e pós-graduação.</p>
-                <span class="card-tag">Progressão Funcional</span>
-                
-                <ul class="hg-editais-lista">
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Poder Judiciário da União (PJU)</span><span class="hg-edital-badge">AQ 2026/2027</span></div>
-                    <span class="hg-edital-desc">Adicional de Qualificação (Lei 11.416) para servidores de TRTs, TRFs, TREs e STJ.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Secretarias de Educação (SME/SEDUC)</span><span class="hg-edital-badge">Ciclo 2026/2027</span></div>
-                    <span class="hg-edital-desc">Evolução funcional e mudança de nível salarial por Licenciatura e Pós-Graduação.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Polícias Militares, Civis e Penais</span><span class="hg-edital-badge">Quadro 2026/2027</span></div>
-                    <span class="hg-edital-desc">Promoção ao Oficialato (PM-SP, PM-PE, PMERJ) e enquadramento por Nível Superior.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Executivo Federal (PCCTAE / IFs e UFs)</span><span class="hg-edital-badge">IQ 2026/2027</span></div>
-                    <span class="hg-edital-desc">Incentivo à Qualificação com acréscimo de até 75% no vencimento básico.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Saúde Pública (EBSERH e SES)</span><span class="hg-edital-badge">2026/2027</span></div>
-                    <span class="hg-edital-desc">Progressão horizontal e vertical por titulação académica e especialização.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Guardas Civis Municipais (GCM)</span><span class="hg-edital-badge">Carreira 2026/2027</span></div>
-                    <span class="hg-edital-desc">Ascensão de classe, Inspetoria e Adicional de Nível Universitário.</span>
-                  </li>
-                </ul>
+
+            <!-- Card 2 -->
+            <div class="card-edital" data-categoria="previstos">
+                <div class="card-edital-topo">
+                    <span class="card-edital-status previsto"><span class="dot"></span> Previsto</span>
+                    <span class="card-edital-marca">&#9889; Hélio Garcia</span>
+                </div>
+                <h2>Polícia Rodoviária (PRF)</h2>
+                <span class="card-edital-cargo">Cargo: Policial Rodoviário</span>
+                <div><span class="card-edital-tag">&#128212; Tecnólogo ou Superior Completo</span></div>
+                <div class="card-edital-salario">
+                    <span>Remuneração Inicial</span>
+                    <strong>R$ 10.790</strong>
+                </div>
+                <span class="card-edital-check"><i class="fas fa-check-circle">&#10004;</i> Registro e-MEC Válido &bull; Diário Oficial</span>
+                <a href="https://wa.me/556199402466?text=Quero%20garantir%20meu%20diploma%20para%20Edital%20PRF" class="card-edital-btn" target="_blank">&#9298; ASSEGURAR REQUISITO</a>
             </div>
-            
-            <div class="card" data-categoria="previstos">
-                <h3>Promoções Executivas e Contratos</h3>
-                <p>Para diretores, gestores e consultores que precisam de certificação acadêmica formal para assinar projetos, participar de licitações ou assumir diretorias.</p>
-                <span class="card-tag">Setor Privado & Licitações</span>
-                
-                <ul class="hg-editais-lista">
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Licitações Públicas (Lei nº 14.133)</span><span class="hg-edital-badge">Editais 2026/2027</span></div>
-                    <span class="hg-edital-desc">Qualificação Técnico-Profissional (Art. 67) para habilitação e assinatura de contratos.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Registo em Conselhos (CREA/CRA/CRC)</span><span class="hg-edital-badge">2026/2027</span></div>
-                    <span class="hg-edital-desc">Diploma homologado para obtenção de registo ativo e emissão de ART/CAT.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Cadastros Petrobras, BNDES e Caixa</span><span class="hg-edital-badge">2026/2027</span></div>
-                    <span class="hg-edital-desc">Editais de credenciamento de fornecedores e consultorias com diretoria titulada.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Governança e Lei das Estatais (13.303)</span><span class="hg-edital-badge">Biénio 2026/2027</span></div>
-                    <span class="hg-edital-desc">Comprovação académica formal para nomeação de Diretores e Conselheiros.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Sistema S e OSs (SEBRAE / SENAI / SESC)</span><span class="hg-edital-badge">2026/2027</span></div>
-                    <span class="hg-edital-desc">Processos seletivos e credenciamento de consultores seniores e gestores.</span>
-                  </li>
-                  <li class="hg-edital-item">
-                    <div class="hg-edital-topo"><span class="hg-edital-nome">Compliance &amp; Auditoria Corporativa</span><span class="hg-edital-badge">Ciclo 2026/2027</span></div>
-                    <span class="hg-edital-desc">Certificação validada no e-MEC para promoções a Gerência, Diretoria e C-Level.</span>
-                  </li>
-                </ul>
+
+            <!-- Card 3 -->
+            <div class="card-edital" data-categoria="previstos">
+                <div class="card-edital-topo">
+                    <span class="card-edital-status previsto"><span class="dot"></span> Previsto</span>
+                    <span class="card-edital-marca">&#9889; Hélio Garcia</span>
+                </div>
+                <h2>Receita Federal</h2>
+                <span class="card-edital-cargo">Cargo: Auditor Fiscal</span>
+                <div><span class="card-edital-tag">&#128212; Qualquer Nível Superior (MEC)</span></div>
+                <div class="card-edital-salario">
+                    <span>Remuneração Inicial</span>
+                    <strong>R$ 21.029</strong>
+                </div>
+                <span class="card-edital-check"><i class="fas fa-check-circle">&#10004;</i> Registro e-MEC Válido &bull; Diário Oficial</span>
+                <a href="https://wa.me/556199402466?text=Quero%20garantir%20meu%20diploma%20para%20Receita%20Federal" class="card-edital-btn" target="_blank">&#9298; ASSEGURAR REQUISITO</a>
             </div>
+
+            <!-- Card 4 -->
+            <div class="card-edital" data-categoria="abertas">
+                <div class="card-edital-topo">
+                    <span class="card-edital-status"><span class="dot"></span> Aberto</span>
+                    <span class="card-edital-marca">&#9889; Hélio Garcia</span>
+                </div>
+                <h2>Banco Central (BACEN)</h2>
+                <span class="card-edital-cargo">Cargo: Analista</span>
+                <div><span class="card-edital-tag">&#128212; Nível Superior Reconhecido</span></div>
+                <div class="card-edital-salario">
+                    <span>Remuneração Inicial</span>
+                    <strong>R$ 20.924</strong>
+                </div>
+                <span class="card-edital-check"><i class="fas fa-check-circle">&#10004;</i> Registro e-MEC Válido &bull; Diário Oficial</span>
+                <a href="https://wa.me/556199402466?text=Quero%20garantir%20meu%20diploma%20para%20BACEN" class="card-edital-btn" target="_blank">&#9298; ASSEGURAR REQUISITO</a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card-edital" data-categoria="previstos">
+                <div class="card-edital-topo">
+                    <span class="card-edital-status previsto"><span class="dot"></span> Previsto</span>
+                   <span class="card-edital-marca">&#9889; Hélio Garcia</span>
+                </div>
+                <h2>Tribunal de Contas (TCU)</h2>
+                <span class="card-edital-cargo">Cargo: Auditor de Controle</span>
+                <div><span class="card-edital-tag">&#128212; Bacharelado / Nível Superior</span></div>
+                <div class="card-edital-salario">
+                    <span>Remuneração Inicial</span>
+                    <strong>R$ 22.339</strong>
+                </div>
+                <span class="card-edital-check"><i class="fas fa-check-circle">&#10004;</i> Registro e-MEC Válido &bull; Diário Oficial</span>
+                <a href="https://wa.me/556199402466?text=Quero%20garantir%20meu%20diploma%20para%20TCU" class="card-edital-btn" target="_blank">&#9298; ASSEGURAR REQUISITO</a>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card-edital" data-categoria="abertas">
+                <div class="card-edital-topo">
+                    <span class="card-edital-status"><span class="dot"></span> Aberto</span>
+                    <span class="card-edital-marca">&#9889; Hélio Garcia</span>
+                </div>
+                <h2>Polícia Civil SP</h2>
+                <span class="card-edital-cargo">Cargo: Investigador / Escrivão</span>
+                <div><span class="card-edital-tag">&#128212; Tecnólogo Acelerado Aceito</span></div>
+                <div class="card-edital-salario">
+                    <span>Remuneração Inicial</span>
+                    <strong>R$ 6.305</strong>
+                </div>
+                <span class="card-edital-check"><i class="fas fa-check-circle">&#10004;</i> Registro e-MEC Válido &bull; Diário Oficial</span>
+                <a href="https://wa.me/556199402466?text=Quero%20garantir%20meu%20diploma%20para%20PCSP" class="card-edital-btn" target="_blank">&#9298; ASSEGURAR REQUISITO</a>
+            </div>
+
         </div>
     </section>
 
-    <!-- NOVO BLOCO DE RISCOS E LEGALIDADES (Foco em Graduação Segura) -->
+    <!-- BLOCO DE RISCOS E LEGALIDADES -->
     <section id="legalidades">
         <div class="section-header">
             <h2>Riscos e Legalidades: Segurança e Transparência</h2>
@@ -692,9 +765,9 @@
             <p>Com a nossa assessoria, a sua Graduação (Bacharelado, Licenciatura ou Tecnólogo) será entregue com total respaldo jurídico e administrativo:</p>
             
             <ul class="legal-list">
-                <li>🛡️ <strong>Registro e validação direta no sistema e-MEC</strong>, permitindo consulta pública oficial.</li>
-                <li>🛡️ <strong>Publicação de conclusão no Diário Oficial da União (DOU).</strong></li>
-                <li>🛡️ <strong>Documentação 100% apta</strong> para conselhos profissionais, especializações, mestrados e promoções executivas.</li>
+                <li>&#124273; <strong>Registro e validação direta no sistema e-MEC</strong>, permitindo consulta pública oficial.</li>
+                <li>&#124273; <strong>Publicação de conclusão no Diário Oficial da União (DOU).</strong></li>
+                <li>&#124273; <strong>Documentação 100% apta</strong> para conselhos profissionais, especializações, mestrados e promoções executivas.</li>
             </ul>
 
             <h3 style="color: var(--accent-yellow-light); margin-top: 30px; font-size: 1.4rem;">Supletivo Rápido e Concursos Públicos</h3>
@@ -702,7 +775,7 @@
 
             <div style="text-align: center; margin-top: 40px;">
                 <a href="https://wa.me/556199402466?text=Ol%C3%A1!%20Li%20sobre%20as%20legalidades%20e%20quero%20obter%20minha%20gradua%C3%A7%C3%A3o%20de%20forma%20100%25%20segura%20e%20reconhecida%20pelo%20MEC." target="_blank" class="btn-wsp" style="max-width: 100%; font-size: 1.05rem;">
-                    🛡️ Falar com um Especialista em Legalização Segura
+                    &#124273; Falar com um Especialista em Legalização Segura
                 </a>
             </div>
         </div>
@@ -729,39 +802,35 @@
         </div>
     </section>
 
-    <!-- Quiz Interativo -->
     <section id="quiz">
         <div class="section-header">
             <h2>Quiz Acadêmico: Descubra Sua Solução Rápida</h2>
-            <p>Responda para saber qual a melhor estratégia para o seu concurso e obtenha atendimento da nossa equipe de <strong>assessoria acadêmica para concursos</strong>.</p>
+            <p>Responda para saber qual a melhor estrategia para o seu concurso e obtenha atendimento da nossa equipe de <strong>assessoria acadêmica para concursos</strong>.</p>
         </div>
         
         <div class="quiz-container">
-            <!-- Passo 1 -->
             <div id="quiz-step-1">
                 <h3 style="margin-bottom: 20px; color: var(--accent-yellow);">Qual o seu objetivo ou nível de escolaridade desejado?</h3>
-                <div class="quiz-option" onclick="avancarQuiz(2, 'Bacharelado')">🎓 Bacharelado</div>
-                <div class="quiz-option" onclick="avancarQuiz(2, 'Tecnólogo')">🚀 Tecnólogo</div>
-                <div class="quiz-option" onclick="avancarQuiz(2, 'Licenciatura')">📚 Licenciatura</div>
-                <div class="quiz-option" onclick="avancarQuiz(2, 'Ensino Médio')">🏫 Ensino Médio</div>
-                <div class="quiz-option" onclick="avancarQuiz(2, 'Concurso Público')">🏛️ Concurso Público</div>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Bacharelado')">&#127893; Bacharelado</div>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Tecnólogo')">&#128640; Tecnólogo</div>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Licenciatura')">&#128218; Licenciatura</div>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Ensino Médio')">&#127976; Ensino Médio</div>
+                <div class="quiz-option" onclick="avancarQuiz(2, 'Concurso Público')">&#127959; Concurso Público</div>
             </div>
 
-            <!-- Passo 2 -->
             <div id="quiz-step-2" style="display: none;">
                 <h3 style="margin-bottom: 20px; color: var(--accent-yellow);">Em relação a esse objetivo, qual é a sua situação atual?</h3>
-                <div class="quiz-option" onclick="avancarQuiz(3, 'iniciei, mas não consegui concluir')">🚧 Iniciei, mas não consegui concluir</div>
-                <div class="quiz-option" onclick="avancarQuiz(3, 'nunca tentei / estou a começar do zero')">🌱 Nunca tentei / Começando do zero</div>
+                <div class="quiz-option" onclick="avancarQuiz(3, 'iniciei, mas não consegui concluir')">&#128677; Iniciei, mas não consegui concluir</div>
+                <div class="quiz-option" onclick="avancarQuiz(3, 'nunca tentei / estou a começar do zero')">&#127793; Nunca tentei / Começando do zero</div>
             </div>
 
-            <!-- Passo 3 (Resultado) -->
             <div id="quiz-step-3" style="display: none;">
                 <h3 style="margin-bottom: 15px; color: var(--primary-green); font-size: 1.8rem;">Nós Temos a Solução!</h3>
                 <p style="margin-bottom: 25px; color: var(--text-light); font-size: 1.05rem;">
                     Não se preocupe! Com a nossa <strong>assessoria acadêmica</strong>, o seu processo será regularizado de forma rápida, segura e 100% legalizada no MEC. Fale com um especialista agora mesmo para dar o próximo passo.
                 </p>
                 <a id="quiz-wsp-btn" href="#" target="_blank" class="btn-wsp" style="max-width: 100%;">
-                    💬 Falar com o Consultor no WhatsApp
+                    &#128172; Falar com o Consultor no WhatsApp
                 </a>
             </div>
         </div>
@@ -776,11 +845,9 @@
         <p><a href="https://assessoriahelioeducacional.com.br/" style="color:var(--accent-yellow);">https://assessoriahelioeducacional.com.br/</a></p>
     </footer>
 
-    <!-- Scripts da Página -->
     <script>
-        // Lógica do Filtro de Editais
         function filtrarEditais(categoria) {
-            const cards = document.querySelectorAll('.card[data-categoria]');
+            const cards = document.querySelectorAll('.card-edital');
             const botoes = document.querySelectorAll('.filter-btn');
 
             botoes.forEach(btn => btn.classList.remove('active'));
@@ -788,14 +855,13 @@
 
             cards.forEach(card => {
                 if (categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
-                    card.style.display = 'block';
+                    card.style.display = 'flex';
                 } else {
                     card.style.display = 'none';
                 }
             });
         }
 
-        // Lógica do Quiz Interativo
         let respostasQuiz = [];
         
         function avancarQuiz(passo, resposta) {
