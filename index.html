@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diplomas & Certificados Académicos</title>
-    <!-- Fonte elegante (Cinzel para títulos acadêmicos e Inter para leitura) -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -20,14 +19,13 @@
             line-height: 1.6;
         }
 
-        /* Topo / Navegação */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 8%;
             background-color: #1c2541;
-            border-bottom: 2px solid #c5a059; /* Tom dourado */
+            border-bottom: 2px solid #c5a059;
             position: fixed;
             width: 100%;
             top: 0;
@@ -47,14 +45,8 @@
             text-decoration: none;
             margin-left: 25px;
             font-weight: 500;
-            transition: color 0.3s;
         }
 
-        nav a:hover {
-            color: #c5a059;
-        }
-
-        /* Banner Principal (Hero) */
         .hero {
             min-height: 90vh;
             display: flex;
@@ -96,13 +88,7 @@
             font-weight: 600;
             border-radius: 6px;
             text-decoration: none;
-            transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
-        }
-
-        .btn:hover {
-            background-color: #e0b86c;
-            transform: translateY(-2px);
         }
 
         .hero-image {
@@ -115,7 +101,117 @@
             max-width: 500px;
             border-radius: 12px;
             border: 2px solid #c5a059;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
-        /* Se
+        .services {
+            padding: 80px 8%;
+            background-color: #1c2541;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            color: #c5a059;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #0b132b;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #3a506b;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 25px;
+            text-align: left;
+        }
+
+        .card-body h3 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .card-body p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0b132b;
+            border-top: 1px solid #3a506b;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ACADÊMICO & DIPLOMAS</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-text">
+            <h1>Sua Formação Merece o <span>Reconhecimento Perfeito</span></h1>
+            <p>Especialistas em emissão, consultoria e documentação para diplomas, certificados e graduações académicas com total segurança e excelência.</p>
+            <a href="#servicos" class="btn">Conhecer Soluções</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Graduação">
+        </div>
+    </section>
+
+    <section class="services" id="servicos">
+        <h2>Soluções Académicas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80" alt="Certificado">
+                <div class="card-body">
+                    <h3>Diplomas & Certificados</h3>
+                    <p>Emissão de documentos académicos oficiais com padrões de alta qualidade e elementos de segurança visual.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1627556592933-ffe99c1cd9eb?auto=format&fit=crop&w=600&q=80" alt="Formatura">
+                <div class="card-body">
+                    <h3>Cursos de Graduação</h3>
+                    <p>Acompanhamento completo para processos de conclusão e validação de cursos superiores e de extensão.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Consultoria">
+                <div class="card-body">
+                    <h3>Consultoria e Validação</h3>
+                    <p>Suporte especializado na verificação, autenticação e regularização de histórico escolar e documentação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Diplomas & Graduação. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
