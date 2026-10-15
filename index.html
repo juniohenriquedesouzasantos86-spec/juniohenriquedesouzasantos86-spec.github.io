@@ -52,7 +52,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 16px 6%;
-            background: rgba(3, 20, 13, 0.9);
+            background: rgba(3, 20, 13, 0.95);
             backdrop-filter: blur(12px);
             position: fixed;
             width: 100%;
@@ -156,12 +156,12 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            margin-top: 15px;
-            padding: 10px 18px;
+            margin-top: 18px;
+            padding: 12px 20px;
             background-color: var(--whatsapp-green);
             color: #000;
             font-weight: 700;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             border-radius: 30px;
             text-decoration: none;
             transition: all 0.3s;
@@ -173,7 +173,7 @@
         .btn-wsp-card:hover {
             background-color: #22c55e;
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
         }
 
         .vsl-container {
@@ -220,6 +220,7 @@
             font-size: 1.05rem;
         }
 
+        /* Seção de Editais */
         .editais-section {
             text-align: center;
             background: radial-gradient(circle at center, #062317 0%, var(--dark-bg) 100%);
@@ -422,7 +423,7 @@
         <div class="hero-text">
             <h1><span>Assessoria Acadêmica</span> Hélio Garcia para Concursos e Posse Rápida</h1>
             <p>Assista ao vídeo e veja como a nossa <strong>assessoria educacional para editais</strong> assume 100% da burocracia acadêmica para você <strong>comprovar nível superior com urgência</strong> e obter seu <strong>diploma reconhecido pelo MEC</strong>.</p>
-            <button type="button" class="btn-wsp" onclick="abrirWhatsApp('Olá! Assisti ao vídeo e quero falar com um consultor sobre assessoria acadêmica.')">
+            <button type="button" class="btn-wsp" onclick="chamarWhatsApp('Olá! Assisti ao vídeo e quero falar com um consultor sobre assessoria acadêmica.')">
                 💬 Falar com o Consultor no WhatsApp
             </button>
         </div>
@@ -443,21 +444,21 @@
                     <h3>1. Análise do Edital</h3>
                     <p>Analisamos as exigências do seu concurso para indicar o melhor caminho de <strong>acelerar faculdade para edital</strong>.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero solicitar uma Análise de Edital com a consultoria.')">Falar sobre Etapa 1</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Quero solicitar uma Análise de Edital com a consultoria.')">Falar sobre Etapa 1</button>
             </div>
             <div class="card">
                 <div>
                     <h3>2. Matrícula Expressa</h3>
                     <p>Acesso a programas de <strong>faculdade expressa para posse</strong> e <strong>tecnólogo reconhecido pelo MEC rápido</strong>.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Gostaria de saber mais sobre a Matrícula Expressa.')">Falar sobre Etapa 2</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Gostaria de saber mais sobre a Matrícula Expressa.')">Falar sobre Etapa 2</button>
             </div>
             <div class="card">
                 <div>
-                    <h3>3. Emissão Valida</h3>
+                    <h3>3. Emissão Válida</h3>
                     <p>Acompanhamento na <strong>emissão de histórico e diploma válido</strong> com registro no diário oficial.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero tirar dúvidas sobre a Emissão do Diploma Válido.')">Falar sobre Etapa 3</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Quero tirar dúvidas sobre a Emissão do Diploma Válido.')">Falar sobre Etapa 3</button>
             </div>
         </div>
     </section>
@@ -473,26 +474,26 @@
                     <h3>Tecnólogos Express</h3>
                     <p>Cursos curtos focados na apresentação rápida para editais de carreiras policiais, administrativas e tribunais.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Tenho interesse nos Tecnólogos Express.')">Consultar Tecnólogos</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Tenho interesse nos Tecnólogos Express.')">Consultar Tecnólogos</button>
             </div>
             <div class="card">
                 <div>
                     <h3>Segunda Graduação</h3>
                     <p>Para quem já é graduado e precisa de nova habilitação rápida para <strong>apresentar títulos em concurso</strong>.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Gostaria de saber mais sobre Segunda Graduação para Títulos.')">Consultar 2ª Graduação</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Gostaria de saber mais sobre Segunda Graduação para Títulos.')">Consultar 2ª Graduação</button>
             </div>
             <div class="card">
                 <div>
                     <h3>Aproveitamento de Estudos</h3>
                     <p>Aproveite disciplinas cursadas para concluir a <strong>faculdade rápida reconhecida pelo MEC</strong> em tempo recorde.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero saber sobre Aproveitamento de Estudos.')">Consultar Aproveitamento</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Quero saber sobre Aproveitamento de Estudos.')">Consultar Aproveitamento</button>
             </div>
         </div>
     </section>
 
-    <!-- Secção de Editais com Filtros e Botão WhatsApp -->
+    <!-- Seção de Editais com Filtros Instantâneos -->
     <section class="editais-section" id="editais">
         <h2 class="editais-title">Mapeamento de Editais e Posse Facilitada</h2>
         <p class="editais-subtitle">Nossa assessoria executa 100% do processo burocrático para emitir o seu diploma reconhecido pelo MEC e garantir a sua posse definitiva no cargo.</p>
@@ -503,183 +504,56 @@
         </div>
 
         <div class="editais-filters">
-            <button type="button" class="filter-btn active" onclick="filtrarEditais('todos', event)">Todos os Editais</button>
-            <button type="button" class="filter-btn" onclick="filtrarEditais('abertas', event)">Inscrições Abertas</button>
-            <button type="button" class="filter-btn" onclick="filtrarEditais('autorizados', event)">Autorizados</button>
-            <button type="button" class="filter-btn" onclick="filtrarEditais('previstos', event)">Previstos</button>
+            <button type="button" class="filter-btn active" onclick="filtrarCards('todos', this)">Todos os Editais</button>
+            <button type="button" class="filter-btn" onclick="filtrarCards('abertas', this)">Inscrições Abertas</button>
+            <button type="button" class="filter-btn" onclick="filtrarCards('autorizados', this)">Autorizados</button>
+            <button type="button" class="filter-btn" onclick="filtrarCards('previstos', this)">Previstos</button>
         </div>
 
         <div class="grid" id="lista-editais">
-            <div class="card" data-categoria="abertas">
+            <!-- Inscrições Abertas -->
+            <div class="card card-edital" data-filtro="abertas">
                 <div>
                     <span class="card-tag">Inscrições Abertas</span>
                     <h3>Concurso Nacional Unificado (CNU)</h3>
                     <p>Validação de tecnólogo e superior para posse imediata nas vagas federais.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Fui aprovado ou pretendo o Concurso Nacional Unificado (CNU) e preciso de assessoria para diploma.')">💬 Atendimento para o CNU</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Fui aprovado ou pretendo o Concurso Nacional Unificado (CNU) e preciso de assessoria para diploma.')">💬 Atendimento para o CNU</button>
             </div>
-            <div class="card" data-categoria="abertas">
+            
+            <div class="card card-edital" data-filtro="abertas">
                 <div>
                     <span class="card-tag">Inscrições Abertas</span>
                     <h3>Tribunais Regionais (TRT / TRE)</h3>
                     <p>Assessoria completa para homologação de diploma e apresentação de títulos.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Preciso de assessoria para editais de Tribunais (TRT / TRE).')">💬 Atendimento para Tribunais</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Preciso de assessoria para editais de Tribunais (TRT / TRE).')">💬 Atendimento para Tribunais</button>
             </div>
-            <div class="card" data-categoria="autorizados">
+
+            <!-- Autorizados -->
+            <div class="card card-edital" data-filtro="autorizados">
                 <div>
                     <span class="card-tag">Autorizados</span>
                     <h3>Polícia Federal & Rodoviária</h3>
                     <p>Aceleração de graduação exigida para o curso de formação e posse no cargo.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Preciso de suporte urgente para Concurso da Polícia Federal / Rodoviária.')">💬 Atendimento para Polícia</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Preciso de suporte urgente para Concurso da Polícia Federal / Rodoviária.')">💬 Atendimento para Polícia</button>
             </div>
-            <div class="card" data-categoria="autorizados">
+
+            <div class="card card-edital" data-filtro="autorizados">
                 <div>
                     <span class="card-tag">Autorizados</span>
                     <h3>Secretaria da Fazenda (Sefaz)</h3>
                     <p>Regularização documental expressa e registro válido no diário oficial.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Tenho interesse em assessoria para editais Sefaz.')">💬 Atendimento para Sefaz</button>
+                <button type="button" class="btn-wsp-card" onclick="chamarWhatsApp('Olá! Tenho interesse em assessoria para editais Sefaz.')">💬 Atendimento para Sefaz</button>
             </div>
-            <div class="card" data-categoria="previstos">
+
+            <!-- Previstos -->
+            <div class="card card-edital" data-filtro="previstos">
                 <div>
                     <span class="card-tag">Previstos</span>
                     <h3>Concursos de Prefeituras e Câmaras</h3>
                     <p>Planejamento acadêmico antecipado para editais previstos no próximo semestre.</p>
                 </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero me planejar para concursos de Prefeituras e Câmaras.')">💬 Atendimento para Prefeituras</button>
-            </div>
-            <div class="card" data-categoria="previstos">
-                <div>
-                    <span class="card-tag">Previstos</span>
-                    <h3>Carreiras Jurídicas e Bancas Cebraspe</h3>
-                    <p>Garantia de conformidade total com exigências de nível superior das bancas.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Preciso de assessoria acadêmica para concursos de bancas Cebraspe.')">💬 Atendimento para Cebraspe</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="legalidades">
-        <div class="section-header">
-            <h2>Riscos e Legalidades: Segurança em Primeiro Lugar</h2>
-            <p>Saiba como obter um <strong>diploma superior para concurso público</strong> 100% legal e auditável.</p>
-        </div>
-        <div class="grid">
-            <div class="card">
-                <div>
-                    <h3>Validação no e-MEC</h3>
-                    <p>Garantia absoluta de <strong>legalização de diploma e-MEC</strong>, permitindo consulta pública oficial.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero saber sobre a Validação no e-MEC.')">Falar sobre e-MEC</button>
-            </div>
-            <div class="card">
-                <div>
-                    <h3>Publicação em Diário Oficial</h3>
-                    <p>Processo transparente com <strong>emissão de diploma com diário oficial</strong> para fins de posse pública.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero saber sobre publicação em Diário Oficial.')">Falar sobre DOU</button>
-            </div>
-            <div class="card">
-                <div>
-                    <h3>Sem Riscos Jurídicos</h3>
-                    <p>Fuja de fraudes! Trabalhamos estritamente com a <strong>regularização de diploma para concurso</strong> na lei educacional.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero esclarecer dúvidas sobre a segurança jurídica do processo.')">Falar sobre Segurança</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="porque-nos">
-        <div class="section-header">
-            <h2>Por Que Escolher Nossa Consultoria Educacional?</h2>
-            <p>Mais de anos auxiliando candidatos a garantirem a vaga dos sonhos no serviço público.</p>
-        </div>
-        <div class="grid">
-            <div class="card">
-                <div>
-                    <h3>Atendimento Especializado</h3>
-                    <p>Equipe focada na solução para <strong>como assumir cargo público sem diploma</strong> no momento da convocação.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero falar com o atendimento especializado.')">Falar com Especialista</button>
-            </div>
-            <div class="card">
-                <div>
-                    <h3>Agilidade Máxima</h3>
-                    <p>Processos urgentes estruturados para atender os prazos apertados do seu edital de convocação.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Tenho prazos apertados e preciso de agilidade máxima.')">Solicitar Urgência</button>
-            </div>
-            <div class="card">
-                <div>
-                    <h3>Suporte Completo</h3>
-                    <p>Acompanhamento desde a análise de documentos até a <strong>emissão de histórico e diploma válido</strong>.</p>
-                </div>
-                <button type="button" class="btn-wsp-card" onclick="abrirWhatsApp('Olá! Quero saber mais sobre o suporte completo.')">Conhecer Suporte</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="quiz">
-        <div class="section-header">
-            <h2>Quiz Acadêmico: Descubra Sua Solução Rápida</h2>
-            <p>Responda para saber qual a melhor estratégia para o seu concurso.</p>
-        </div>
-        <div class="quiz-container">
-            <h3>Qual a sua maior urgência acadêmica hoje?</h3>
-            <div class="quiz-option" onclick="abrirWhatsApp('Preciso de diploma urgente para posse de concurso')">
-                📌 Fui aprovado e preciso de diploma rápido para a posse.
-            </div>
-            <div class="quiz-option" onclick="abrirWhatsApp('Quero acelerar minha graduação para prova de títulos')">
-                🏆 Preciso de pontuação urgente na Prova de Títulos.
-            </div>
-            <div class="quiz-option" onclick="abrirWhatsApp('Preciso validar meu diploma no e-MEC')">
-                🔍 Quero regularizar e validar meu diploma no e-MEC.
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Hélio Garcia Assessoria Acadêmica. Todos os direitos reservados.</p>
-        <p><a href="https://assessoriahelioeducacional.com.br/" style="color:var(--accent-yellow);">https://assessoriahelioeducacional.com.br/</a></p>
-    </footer>
-
-    <!-- Script Corrigido: Camuflagem Antiban e Redirecionamento Direto -->
-    <script>
-        function abrirWhatsApp(mensagem) {
-            // Número 100% validado: DDI (55) + DDD (61) + Número (999402466)
-            const numero = "5561999402466";
-            const texto = encodeURIComponent(mensagem || "Olá! Gostaria de mais informações sobre a assessoria.");
-            
-            // Camuflagem das partes da URL para não ser indexada diretamente por scrapers e robôs de anúncios
-            const dominio = ["https://", "api.", "whatsapp", ".com"].join("");
-            const rota = "/send?phone=" + numero + "&text=" + texto;
-            const urlFinal = dominio + rota;
-
-            // Redirecionamento direto: não bloqueia em Safari / Chrome Mobile
-            window.location.href = urlFinal;
-        }
-
-        // Função de Filtro Dinâmico dos Editais
-        function filtrarEditais(categoria, evento) {
-            const cards = document.querySelectorAll('.card[data-categoria]');
-            const botoes = document.querySelectorAll('.filter-btn');
-
-            botoes.forEach(btn => btn.classList.remove('active'));
-            if (evento && evento.currentTarget) {
-                evento.currentTarget.classList.add('active');
-            }
-
-            cards.forEach(card => {
-                if (categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-    </script>
-
-</body>
-</html>
+                <button type="button
